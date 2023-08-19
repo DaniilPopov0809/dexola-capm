@@ -1,4 +1,5 @@
 @import "../../styles/variables";
+@import 'react-phone-input-2/lib/style.css';
 
 .form {
   display: flex;
@@ -58,6 +59,13 @@
     border: none;
     padding: 0;
     cursor: pointer;
+
+    transform: border-color $animation;
+
+    &:hover
+    {
+      scale: 1.1;
+    }
   }
   
   .form__toggle::after {
@@ -75,5 +83,13 @@
   }
 
 .form__error {
+  font-size: 13px;
+  letter-spacing: 0.26px;
+  line-height:  1,85; 
   color: $warrning-rose-color;
 }
+
+.error {
+  border-color: $warrning-rose-color;
+}
+
