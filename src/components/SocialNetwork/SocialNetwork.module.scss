@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.social {
+  display: flex;
+  justify-content: center;
+
+  padding: 12px 0;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 34px 0;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 34px 116px;
+    margin-bottom: 0;
+  }
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 32px;
+
+    @media screen and (min-width: $tablet) {
+      margin-right: 24px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 40px;
+    }
+  }
+}
+
+.social__link {
+  transition: scale $animation;
+
+  :hover {
+    scale: 1.02;
+  }
+}
