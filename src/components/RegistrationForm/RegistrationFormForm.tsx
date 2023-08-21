@@ -69,7 +69,7 @@ const RegistrationForm = () => {
                 <div className={styles.form__container}>
                   <input
                     className={`${styles.form__input} ${
-                      meta.touched && meta.error ? styles.error : ""
+                      meta.touched && meta.error ? styles.error : meta.touched ? styles.success : ""
                     }`}
                     type="email"
                     {...field}
@@ -116,7 +116,7 @@ const RegistrationForm = () => {
                 <div className={styles.form__container}>
                   <input
                     className={`${styles.form__input} ${
-                      meta.touched && meta.error ? styles.error : ""
+                      meta.touched && meta.error ? styles.error : meta.touched ? styles.success : ""
                     }`}
                     type={isOpenEyePass ? "text" : "password"}
                     placeholder="Password"
@@ -142,7 +142,7 @@ const RegistrationForm = () => {
                 <div className={styles.form__container}>
                   <input
                     className={`${styles.form__input} ${
-                      meta.touched && meta.error ? styles.error : ""
+                      meta.touched && meta.error ? styles.error : meta.touched ? styles.success : ""
                     }`}
                     type={isOpenEyeConfPass ? "text" : "password"}
                     placeholder="Confirm password"
