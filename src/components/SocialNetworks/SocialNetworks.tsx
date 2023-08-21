@@ -1,4 +1,4 @@
-import styles from "./SocialNetwork.module.scss";
+import styles from "./SocialNetworks.module.scss";
 import sprite from "../../image/sprite.svg";
 
 const SocialNetwork = () => {

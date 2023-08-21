@@ -168,7 +168,7 @@ const RegistrationForm = () => {
               title={"Send it"}
               type="submit"
               disabled={isSubmitting}
-              className={"button"}
+              className={"form__button"}
             />
           </Form>
         )}
