@@ -42,6 +42,7 @@
   color: $white-color;
 
   font-family: $body-font;
+  letter-spacing: -0.28px;
 
   transition: border-color $animation;
 
@@ -54,49 +55,58 @@
     border-color: $accent-blue-color;
     outline: none;
   }
+
+  @media screen and (min-width: $tablet) {
+    font-size: $body-tablet-fontsize;
+    letter-spacing: -0.32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: $body-desktop-fontsize;
+    line-height: 1.33;
+    letter-spacing: 0.36px;
+  }
 }
 
 .form__toggle {
-    position: absolute;
-    top: 8px;
-    right: 0;
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 
-    transition: border-color $animation;
+  transition: border-color $animation;
 
-    &:hover
-    {
-      scale: 1.1;
-    }
+  &:hover {
+    scale: 1.1;
   }
-  
-  .form__toggle::after {
-    content: ""; 
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%; 
-    height: 100%;
-    background: url("../../images/eye-closed.svg");
-  }
-  
-  .form__toggle.open::after {
-    background: url("../../images/eye-opened.svg"); 
-  }
+}
+
+.form__toggle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../images/eye-closed.svg");
+}
+
+.form__toggle.open::after {
+  background: url("../../images/eye-opened.svg");
+}
 
 .form__error {
   font-size: 13px;
   letter-spacing: 0.26px;
-  line-height:  1,85; 
+  line-height: 1, 85;
   color: $warrning-rose-color;
 }
 
 .error {
   border-color: $warrning-rose-color;
 }
-

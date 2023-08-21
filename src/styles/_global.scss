@@ -12,6 +12,7 @@ body {
 
     @media screen and (min-width: $tablet) {
       font-size: $body-tablet-fontsize;
+      letter-spacing: -0.32px;
     }
   
     @media screen and (min-width: $desktop) {

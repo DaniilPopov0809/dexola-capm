@@ -1,5 +1,6 @@
 import RegistrationForm from "../RegistrationForm/RegistrationFormForm";
 import styles from "./JoinUs.module.scss";
+import longArrow from "../../images/long-arrow.svg"
 
 const JoinUs = () => {
   return (
@@ -18,7 +19,8 @@ const JoinUs = () => {
       full range of our services that cater to your needs. We've got you covered
       with top-notch solutions.
     </p>
-    </div>
+    <img src={longArrow} alt="Arrow" width={44} height={44} className={styles.joinUs__image}/>
+    </div>  
     <RegistrationForm />
     </div>
   </section>

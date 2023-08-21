@@ -1,15 +1,15 @@
 @import "../../styles/variables";
 
 .joinUs {
-padding-bottom: 65px;
+  padding-bottom: 65px;
 
-@media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     padding-bottom: 76px;
-}
+  }
 
-@media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     padding-bottom: 113px;
-}
+  }
 }
 
 .joinUs__title {
@@ -31,10 +31,10 @@ padding-bottom: 65px;
 }
 
 .joinUs__wrap {
-    @media screen and (min-width: $desktop) {
-        display: flex;
-        justify-content: space-between;
-    }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .joinUs__descriptionWrap {
@@ -71,5 +71,16 @@ padding-bottom: 65px;
   @media screen and (min-width: $desktop) {
     width: 538px;
     margin-bottom: 16px;
+  }
+}
+
+.joinUs__image {
+  display: none;
+
+  padding-top: 17px;
+  padding-bottom: 17px; 
+
+  @media screen and (min-width: $desktop) {
+    display: block;
   }
 }
