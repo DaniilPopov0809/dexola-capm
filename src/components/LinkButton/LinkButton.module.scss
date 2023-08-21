@@ -9,23 +9,23 @@
   padding-bottom: 13px;
   padding-left: 36px;
 
-  color: $white-color;
-  font-family: $body-font;
-  font-size: $body-tablet-fontsize;
-  font-weight: $medium-weight;
+  color: $whiteColor;
+  font-family: $bodyFont;
+  font-size: $bodyTabletFontsize;
+  font-weight: $mediumWeight;
   line-height: 1.5;
   letter-spacing: 0.65px;
   text-transform: uppercase;
 
   cursor: pointer;
 
-  background-color: $button-color;
+  background-color: $buttonColor;
   border: none;
 
   transition: background-color $animation;
 
   &:hover {
-    background-color: $button-hover-color;
+    background-color: $buttonHoverColor;
   }
 
   @media screen and (min-width: $tablet) {
@@ -42,7 +42,7 @@
   height: 1.5px;
   top: 50%;
   left: 89px;
-  background: $white-color;
+  background: $whiteColor;
 
   @media screen and (min-width: $tablet) {
     left: 54px;
@@ -53,14 +53,14 @@
   display: block;
   padding: 10px 16px 10px 48px;
 
-  font-size: $body-mobile-fontsize;
+  font-size: $bodyMobileFontsize;
   line-height: 1.5;
   letter-spacing: 0.6px;
 
   @media screen and (min-width: $tablet) {
     padding: 12px 66px 12px 89px;
 
-    font-size: $body-tablet-fontsize;
+    font-size: $bodyTabletFontsize;
     text-transform: none;
     // line-height: 1.5;
     letter-spacing: 0.32px;

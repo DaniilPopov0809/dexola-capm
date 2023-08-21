@@ -18,7 +18,7 @@
 
   margin-bottom: 27px;
   padding-bottom: 10px;
-  border-bottom: 1px solid $white-color;
+  border-bottom: 1px solid $whiteColor;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 56px;
@@ -78,7 +78,7 @@
   display: none;
 
   padding-top: 17px;
-  padding-bottom: 17px; 
+  padding-bottom: 17px;
 
   @media screen and (min-width: $desktop) {
     display: block;

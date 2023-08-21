@@ -94,7 +94,7 @@ const RegistrationForm = () => {
                   marginBottom: "16px",
                 }}
                 buttonStyle={{
-                  backgroundColor: "transparent",
+                  background-color: "transparent",
                   border: "none",
                   padding: 0,
                   height: "40px",

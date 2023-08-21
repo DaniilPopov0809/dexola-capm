@@ -2,42 +2,42 @@
 .title__h2,
 .title__h3 {
   font-family: Kanit;
-  color: $white-color;
+  color: $whiteColor;
 }
 
 .title__h1 {
-  font-size: $title-hero-mobile-fontsize;
-  font-weight: $medium-weight;
+  font-size: $titleHeroMobileFontsize;
+  font-weight: $mediumWeight;
   line-height: 1.25;
   text-transform: uppercase;
 }
 
 .title__h2 {
-  font-size: $title-mobile-fontsize;
-  font-weight: $normal-weight;
+  font-size: $titleMobileFontsize;
+  font-weight: $normalWeight;
 
   @media screen and (min-width: $tablet) {
-    font-size: $title-tablet-fontsize;
+    font-size: $titleTabletFontsize;
     line-height: 1.25;
   }
 
   @media screen and (min-width: $desktop) {
-    font-size: $title-desktop-fontsize;
+    font-size: $titleDesktopFontsize;
     line-height: 1;
   }
 }
 
 .title__h3 {
-  font-size: $body-tablet-fontsize;
-  font-weight: $medium-weight;
+  font-size: $bodyTabletFontsize;
+  font-weight: $mediumWeight;
   line-height: 1.4;
 
   @media screen and (min-width: $tablet) {
-    font-size: $subtitle-tablet-fontsize;
+    font-size: $subtitleTabletFontsize;
   }
 
   @media screen and (min-width: $desktop) {
-    font-size: $subtitle-desktop-fontsize;
+    font-size: $subtitleDesktopFontsize;
     line-height: 1.33;
     letter-spacing: 0.48px;
   }

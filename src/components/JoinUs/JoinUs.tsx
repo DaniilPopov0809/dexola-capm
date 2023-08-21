@@ -1,6 +1,6 @@
 import RegistrationForm from "../RegistrationForm/RegistrationFormForm";
 import styles from "./JoinUs.module.scss";
-import longArrow from "../../images/long-arrow.svg"
+import longArrow from "../../images/longArrow.svg"
 
 const JoinUs = () => {
   return (
