@@ -15,15 +15,15 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   className,
   ...buttonProps
 }) => {
-  let compositeClassName: string = '';
-  if(className) {
-  compositeClassName = `${styles.linkbutton} ${styles[className] || ""}`;
-}
+  let compositeClassName: string = "";
+  if (className) {
+    compositeClassName = `${styles.linkButton} ${styles[className] || ""}`;
+  }
   if (link) {
     return (
       <div className={styles.linkbutton__wrap}>
         <a href={link} className={compositeClassName}>
-          <span>{title}</span>
+          {title}
         </a>
       </div>
     );

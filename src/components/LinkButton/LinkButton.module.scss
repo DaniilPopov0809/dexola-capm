@@ -1,6 +1,6 @@
 @import "../../styles/variables";
 
-.linkbutton {
+.linkButton {
   position: relative;
 
   display: inline-block;
@@ -14,7 +14,8 @@
   font-size: $body-tablet-fontsize;
   font-weight: $medium-weight;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.65px;
+  text-transform: uppercase;
 
   cursor: pointer;
 
@@ -34,7 +35,7 @@
   }
 }
 
-.linkbutton.button::before {
+.linkButton.form__button::before {
   content: "";
   position: absolute;
   width: 24px;
@@ -45,5 +46,40 @@
 
   @media screen and (min-width: $tablet) {
     left: 54px;
+  }
+}
+
+.linkButton.header__link {
+  display: block;
+  padding: 10px 16px 10px 48px;
+
+  font-size: $body-mobile-fontsize;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 12px 66px 12px 89px;
+
+    font-size: $body-tablet-fontsize;
+    text-transform: none;
+    // line-height: 1.5;
+    letter-spacing: 0.32px;
+  }
+}
+
+.linkButton.header__link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 16px;
+  width: 24px;
+  height: 17px;
+  background-image: url("../../image/arrow.svg");
+
+  @media screen and (min-width: $tablet) {
+    width: 16px;
+    height: 16px;
+    left: 66px;
   }
 }
