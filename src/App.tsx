@@ -1,18 +1,17 @@
-import RegistrationForm from "./components/RegistrationForm/RegistrationFormForm"
 import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
+// import Header from "./components/Header/Header";
+import JoinUs from "./components/JoinUs/JoinUs";
 
 function App() {
-
   return (
     <>
-    <Header />
-    <div className="container">
-    <RegistrationForm/>
-    </div>
-    <Footer/>
+      {/* <Header /> */}
+      <main className="container">
+        <JoinUs />
+      </main>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,18 +1,23 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    background-color: $background-color;
-    font-family: $body-font;
-    color: $light-grey-color;
-    letter-spacing: -0.28px;
+  background-color: $backgroundColor;
+  font-family: $bodyFont;
+  color: $lightGreyColor;
+  letter-spacing: -0.28px;
 
-    font-size: $body-mobile-fontsize;
+  font-size: $bodyMobileFontsize;
 
-    @media screen and (min-width: $tablet) {
-      font-size: $body-tablet-fontsize;
-    }
-  
-    @media screen and (min-width: $desktop) {
-      font-size: $body-desktop-fontsize;
-    }
+  @media screen and (min-width: $tablet) {
+    font-size: $bodyTabletFontsize;
+    letter-spacing: -0.32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: $bodyDesktopFontsize;
+  }
 }
 
 h1,
@@ -25,7 +30,8 @@ ul {
   list-style: none;
 }
 
-img, svg {
+img,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
