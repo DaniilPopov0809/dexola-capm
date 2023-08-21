@@ -1,0 +1,102 @@
+@import "../../styles/variables";
+// @import 'react-phone-input-2/lib/style.css';
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 16px 16px;
+
+  border: 1px solid $accent-blue-color;
+
+  @media screen and (min-width: $tablet) {
+    padding: 55px 40px;
+  }
+}
+
+.form__container {
+  position: relative;
+  margin-bottom: 16px;
+  height: 68px;
+
+  &::before {
+    content: "*";
+    position: absolute;
+    color: $warrning-rose-color;
+    top: 8px;
+    left: 0;
+    font-size: 16px;
+  }
+}
+
+.form__input {
+  width: 100%;
+  padding: 8px 0 14px 30px;
+  margin-bottom: 4px;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $white-color;
+
+  color: $white-color;
+
+  font-family: $body-font;
+
+  transition: border-color $animation;
+
+  &::placeholder {
+    color: $light-grey-color;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $accent-blue-color;
+    outline: none;
+  }
+}
+
+.form__toggle {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    transition: border-color $animation;
+
+    &:hover
+    {
+      scale: 1.1;
+    }
+  }
+  
+  .form__toggle::after {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; 
+    height: 100%;
+    background: url("../../image/eye-closed.svg");
+  }
+  
+  .form__toggle.open::after {
+    background: url("../../image/eye-opened.svg"); 
+  }
+
+.form__error {
+  font-size: 13px;
+  letter-spacing: 0.26px;
+  line-height:  1,85; 
+  color: $warrning-rose-color;
+}
+
+.error {
+  border-color: $warrning-rose-color;
+}
+
