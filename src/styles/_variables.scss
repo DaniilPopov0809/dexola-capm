@@ -6,6 +6,9 @@ $light-grey-color: #B3B3B3;
 $background-color: #060412;
 $warrning-rose-color: #EB3795;
 
+$button-color: rgba(39, 42, 46, 1);
+$button-hover-color: rgba(39, 42, 46, 0.9);
+
 $animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 $body-font:  "Roboto Mono", sans-serif;
@@ -23,3 +26,9 @@ $subtitle-desktop-fontsize:  24px;
 $title-mobile-fontsize:  48px;
 $title-tablet-fontsize:  112px;
 $title-desktop-fontsize:  140px;
+
+$mobile: 375px;
+$mobile-end: 743px;
+$tablet: 744px;
+$tablet-end: 1439px;
+$desktop: 1440px;

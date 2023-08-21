@@ -1,11 +1,18 @@
 @import "../../styles/variables";
-@import 'react-phone-input-2/lib/style.css';
+// @import 'react-phone-input-2/lib/style.css';
 
 .form {
   display: flex;
   flex-direction: column;
 
-  padding: 16px;
+  width: 100%;
+  padding: 16px 16px;
+
+  border: 1px solid $accent-blue-color;
+
+  @media screen and (min-width: $tablet) {
+    padding: 55px 40px;
+  }
 }
 
 .form__container {
@@ -36,7 +43,7 @@
 
   font-family: $body-font;
 
-  transform: border-color $animation;
+  transition: border-color $animation;
 
   &::placeholder {
     color: $light-grey-color;
@@ -60,7 +67,7 @@
     padding: 0;
     cursor: pointer;
 
-    transform: border-color $animation;
+    transition: border-color $animation;
 
     &:hover
     {

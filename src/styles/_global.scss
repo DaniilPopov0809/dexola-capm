@@ -1,15 +1,32 @@
 body {
     background-color: $background-color;
     font-family: $body-font;
+    color: $light-grey-color;
     letter-spacing: -0.28px;
+
+    font-size: $body-mobile-fontsize;
+
+    @media screen and (min-width: $tablet) {
+      font-size: $body-tablet-fontsize;
+    }
+  
+    @media screen and (min-width: $desktop) {
+      font-size: $body-desktop-fontsize;
+    }
 }
 
-// h1,
-// h2,
-// h3,
-// p,
-// ul {
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-// }
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

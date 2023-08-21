@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+
+.linkbutton {
+  position: relative;
+
+  display: inline-block;
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  padding-left: 36px;
+
+  color: $white-color;
+  font-family: $body-font;
+  font-size: $body-tablet-fontsize;
+  font-weight: $medium-weight;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+
+  cursor: pointer;
+
+  background-color: $button-color;
+  border: none;
+
+  transition: background-color $animation;
+
+  &:hover {
+    background-color: $button-hover-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: auto;
+    padding-left: 89px;
+    padding-right: 76px;
+  }
+}
+
+.linkbutton.button::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 1.5px;
+  top: 50%;
+  left: 89px;
+  background: $white-color;
+
+  @media screen and (min-width: $tablet) {
+    left: 54px;
+  }
+}
