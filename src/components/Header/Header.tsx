@@ -1,5 +1,5 @@
 import LinkButton from "../LinkButton/LinkButton";
-import logo from "../../image/logo.svg";
+import logo from "../../images/logo.svg";
 import styles from "./Header.module.scss";
 
 const Header = () => {
