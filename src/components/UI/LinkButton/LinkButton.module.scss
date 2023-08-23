@@ -1,0 +1,119 @@
+  @import "../../../styles/variables";
+
+  .linkButton {
+    position: relative;
+
+    display: inline-block;
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 13px;
+    padding-left: 36px;
+
+    color: $whiteColor;
+    font-family: $bodyFont;
+    font-size: $bodyTabletFontsize;
+    font-weight: $mediumWeight;
+    line-height: 1.5;
+    // letter-spacing: 0.65px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    background-color: $buttonColor;
+    border: none;
+
+    transition: background-color $animation;
+
+    &:hover {
+      background-color: $buttonHoverColor;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: auto;
+      padding-left: 89px;
+      padding-right: 75px;
+    }
+  }
+
+  .linkButton.form__button::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1.5px;
+    top: 50%;
+    left: 89px;
+    background: $whiteColor;
+
+    @media screen and (min-width: $tablet) {
+      left: 54px;
+    }
+  }
+
+  .linkButton.header__link {
+    display: block;
+    padding: 10px 16px 10px 48px;
+
+    font-size: $bodyMobileFontsize;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+
+    @media screen and (min-width: $tablet) {
+      padding: 12px 66px 12px 89px;
+
+      font-size: $bodyTabletFontsize;
+      text-transform: none;
+      // line-height: 1.5;
+      letter-spacing: 0.32px;
+    }
+  }
+
+  .linkButton.header__link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 16px;
+    width: 24px;
+    height: 17px;
+    background-image: url("../../../images/arrow.svg");
+
+    @media screen and (min-width: $tablet) {
+      width: 16px;
+      height: 16px;
+      left: 66px;
+    }
+  }
+
+  .linkButton.featureCard__link {
+    padding: 12px 78px 12px 100px;
+
+    @media screen and (min-width: $tablet) {
+      padding: 12px 29px 12px 46px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 12px 82px 12px 105px;
+    }
+  }
+
+  .linkButton.featureCard__link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 78px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../../images/arrow.svg");
+
+    @media screen and (min-width: $tablet) {
+      width: 10px;
+      left: 29px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 16px;
+      left: 83px;
+
+    }
+  }

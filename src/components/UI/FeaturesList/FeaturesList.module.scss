@@ -1,0 +1,16 @@
+@import "/src/styles/variables";
+
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    gap: 18px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 40px;
+  }
+}

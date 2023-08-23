@@ -21,20 +21,16 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   }
   if (link) {
     return (
-      <div className={styles.linkbutton__wrap}>
         <a href={link} className={compositeClassName}>
           {title}
         </a>
-      </div>
     );
   }
 
   return (
-    <div className={styles.linkbutton__wrap}>
       <button className={compositeClassName} onClick={onClick} {...buttonProps}>
         {title}
       </button>
-    </div>
   );
 };
 

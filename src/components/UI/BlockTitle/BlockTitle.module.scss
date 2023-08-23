@@ -1,0 +1,103 @@
+@import "../../../styles/variables";
+
+// .title {
+//   display: flex;
+//   justify-content: space-between;
+
+//   padding-bottom: 10px;
+//   border-bottom: 1px solid $whiteColor;
+
+//   font-family: Kanit;
+//   font-size: $titleMobileFontsize;
+//   font-weight: $normalWeight;
+//   color: $whiteColor;
+
+//   @media screen and (min-width: $tablet) {
+//     padding-bottom: 16px;
+
+//     font-size: $titleTabletFontsize;
+//     line-height: 1.25;
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     font-size: $titleDesktopFontsize;
+//     line-height: 1;
+//   }
+// }
+
+.title {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 10px;
+  border-bottom: 1px solid $whiteColor;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 90px;
+  }
+}
+
+.joinUs {
+  margin-bottom: 27px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 56px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 90px;
+  }
+}
+
+.features {
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 56px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 96px;
+  }
+}
+
+.title.featureCard {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+
+  margin-bottom: 16px;
+  padding: 0;
+
+  border: none;
+  font-size: $subtitleMobileFontsize;
+  font-weight: $mediumWeight;
+  line-height: 1.4;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: column-reverse;
+    font-size: $subtitleTabletFontsize;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row-reverse;
+    font-size: $subtitleDesktopFontsize;
+  }
+}
+
+.featureCardText {
+  margin-left: 16px;
+  
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 16px;
+  }
+}
