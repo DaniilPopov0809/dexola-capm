@@ -1,4 +1,4 @@
-import LinkButton from "../LinkButton/LinkButton";
+import LinkButton from "../UI/LinkButton/LinkButton";
 import logo from "../../images/logo.svg";
 import styles from "./Header.module.scss";
 
@@ -7,7 +7,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={`container ${styles.header__wrap}`}>
         <a className={styles.header__linkLogo} href="/">
-          <img src={logo} alt="logo" width={35} height={20}/>
+          <img src={logo} alt="logo" width={35} height={20} />
         </a>
         <LinkButton link="#" title="Join Now" className="header__link" />
       </div>

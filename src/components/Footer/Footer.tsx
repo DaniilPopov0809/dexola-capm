@@ -1,5 +1,5 @@
 import styles from "./Foter.module.scss";
-import SocialNetwork from "../SocialNetworks/SocialNetworks";
+import SocialNetwork from "../UI/SocialNetworks/SocialNetworks";
 
 const Footer = () => {
   return (
