@@ -39,13 +39,14 @@
 
 .joinUs__descriptionWrap {
   margin-bottom: 32px;
+  width: 100%;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 56px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 538px;
+    min-width: 538px;
 
     margin-bottom: 0;
     margin-right: 66px;
@@ -63,13 +64,14 @@
 .joinUs__description {
   line-height: normal;
   letter-spacing: -0.28px;
+  width: 100%;
 
   @media screen and (min-width: $tablet) {
-    width: 598px;
+    min-width: 598px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 538px;
+    min-width: 538px;
     margin-bottom: 16px;
   }
 }

@@ -68,7 +68,7 @@ const RegistrationForm = () => {
             {({ field, meta }: FieldProps) => (
               <div className={styles.form__container}>
                 <input
-                  className={`${styles.form__input} ${
+                  className={`mainFontSize ${styles.form__input} ${
                     meta.touched && meta.error
                       ? styles.error
                       : meta.touched
@@ -119,7 +119,7 @@ const RegistrationForm = () => {
             {({ field, meta }: FieldProps) => (
               <div className={styles.form__container}>
                 <input
-                  className={`${styles.form__input} ${
+                  className={`mainFontSize  ${styles.form__input} ${
                     meta.touched && meta.error
                       ? styles.error
                       : meta.touched
@@ -132,7 +132,7 @@ const RegistrationForm = () => {
                 />
                 <button
                   type="button"
-                  className={`${styles.form__toggle} ${
+                  className={`mainFontSize ${styles.form__toggle} ${
                     isOpenEyePass ? styles.open : ""
                   }`}
                   onClick={() => setIsOpenEyePass(!isOpenEyePass)}
@@ -149,7 +149,7 @@ const RegistrationForm = () => {
             {({ field, meta }: FieldProps) => (
               <div className={styles.form__container}>
                 <input
-                  className={`${styles.form__input} ${
+                  className={`mainFontSize ${styles.form__input} ${
                     meta.touched && meta.error
                       ? styles.error
                       : meta.touched
@@ -176,12 +176,14 @@ const RegistrationForm = () => {
               </div>
             )}
           </Field>
+          <div className={styles.linkbutton__buttonWrap}>
           <LinkButton
             title={"Send it"}
             type="submit"
             disabled={isSubmitting}
             className={"form__button"}
           />
+          </div>
         </Form>
       )}
     </Formik>

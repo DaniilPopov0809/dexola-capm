@@ -1,8 +1,10 @@
 .title__h1,
 .title__h2,
-.title__h3 {
+.title__h3,
+.title__h4 {
   font-family: Kanit;
   color: $whiteColor;
+  transition: font-size $animation;
 }
 
 .title__h1 {
@@ -13,32 +15,69 @@
 }
 
 .title__h2 {
-  font-size: $titleMobileFontsize;
+   font-size: $titleMobileFontsize;
   font-weight: $normalWeight;
 
-  @media screen and (min-width: $tablet) {
-    font-size: $titleTabletFontsize;
-    line-height: 1.25;
+  // @media (min-width: $mobile) and (max-width: $mobileEnd) {
+  //   font-size: calc($titleMobileFontsize + (112 - 48) * ((100vw - $mobile) / (743 - 375)));
+    
+  // }
+  // @media (min-width: $tablet) and (max-width: $tabletEnd) {
+  //   font-size: calc($titleTabletFontsize + (140 - 112) * ((100vw - $tablet) / (1439 - 744)));
+  // }
+
+  @media (min-width: $mobile) and (max-width: $tabletEnd) {
+    font-size: calc($titleMobileFontsize + (140 - 48) * ((100vw - $mobile) / (1439 - 375)));
   }
 
-  @media screen and (min-width: $desktop) {
+  @media (min-width: $desktop){
     font-size: $titleDesktopFontsize;
-    line-height: 1;
   }
+ 
+
+  // @media screen and (min-width: $tablet) {
+  //   font-size: $titleTabletFontsize;
+  //   line-height: 1.25;
+  // }
+
+  // @media screen and (min-width: $desktop) {
+  //   font-size: $titleDesktopFontsize;
+  //   line-height: 1;
+  // }
 }
 
-.title__h3 {
+.title__h3,
+.title__h4 {
   font-size: $subtitleMobileFontsize;
   font-weight: $mediumWeight;
   line-height: 1.4;
 
-  @media screen and (min-width: $tablet) {
-    font-size: $subtitleTabletFontsize;
+
+  // @media (min-width: $mobile) and (max-width: $mobileEnd) {
+  //   font-size: calc($subtitleMobileFontsize + (20 - 16) * ((100vw - $mobile) / (743 - 375)));
+    
+  // }
+  // @media (min-width: $tablet) and (max-width: $tabletEnd) {
+  //   font-size: calc($subtitleTabletFontsize + (24 - 20) * ((100vw - $tablet) / (1439 - 744)));
+  // }
+
+  @media (min-width: $mobile) and (max-width: $tabletEnd) {
+    font-size: calc($subtitleMobileFontsize + (24 - 16) * ((100vw - $mobile) / (1439 - 375)));
   }
 
-  @media screen and (min-width: $desktop) {
+  @media (min-width: $desktop){
     font-size: $subtitleDesktopFontsize;
     line-height: 1.33;
     letter-spacing: 0.48px;
   }
+
+  // @media screen and (min-width: $tablet) {
+  //   font-size: $subtitleTabletFontsize;
+  // }
+
+  // @media screen and (min-width: $desktop) {
+  //   font-size: $subtitleDesktopFontsize;
+  //   line-height: 1.33;
+  //   letter-spacing: 0.48px;
+  // }
 }

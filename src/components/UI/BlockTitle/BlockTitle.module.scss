@@ -74,18 +74,13 @@
   padding: 0;
 
   border: none;
-  font-size: $subtitleMobileFontsize;
-  font-weight: $mediumWeight;
-  line-height: 1.4;
 
   @media screen and (min-width: $tablet) {
     flex-direction: column-reverse;
-    font-size: $subtitleTabletFontsize;
   }
 
   @media screen and (min-width: $desktop) {
     flex-direction: row-reverse;
-    font-size: $subtitleDesktopFontsize;
   }
 }
 
