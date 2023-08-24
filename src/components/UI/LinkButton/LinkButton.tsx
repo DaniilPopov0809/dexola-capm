@@ -30,7 +30,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   return (
       <button className={compositeClassName} onClick={onClick} {...buttonProps}>
         {title}
-      </button>
+    </button>
   );
 };
 

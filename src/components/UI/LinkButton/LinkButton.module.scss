@@ -3,11 +3,7 @@
   .linkButton {
     position: relative;
 
-    display: inline-block;
-    width: 100%;
-    padding-top: 11px;
-    padding-bottom: 13px;
-    padding-left: 36px;
+    // display: inline-block;
 
     color: $whiteColor;
     font-family: $bodyFont;
@@ -27,6 +23,11 @@
     &:hover {
       background-color: $buttonHoverColor;
     }
+  }
+
+
+  .linkButton.form__button {
+    padding: 11px 93px 13px 126px;
 
     @media screen and (min-width: $tablet) {
       width: auto;
@@ -34,6 +35,7 @@
       padding-right: 75px;
     }
   }
+   
 
   .linkButton.form__button::before {
     content: "";
@@ -50,7 +52,7 @@
   }
 
   .linkButton.header__link {
-    display: block;
+    display: inline-block;
     padding: 10px 16px 10px 48px;
 
     font-size: $bodyMobileFontsize;
@@ -85,6 +87,8 @@
   }
 
   .linkButton.featureCard__link {
+    // display: inline-block;
+
     padding: 12px 78px 12px 100px;
 
     @media screen and (min-width: $tablet) {

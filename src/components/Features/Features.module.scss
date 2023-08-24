@@ -36,6 +36,6 @@
         width: calc((100% - 36px)/3*2);
     }
     @media screen and (min-width: $desktop) {
-        width: 601px;
+        max-width: 601px;
         }
 }

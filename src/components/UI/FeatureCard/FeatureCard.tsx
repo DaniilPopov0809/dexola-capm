@@ -6,6 +6,7 @@ import { FeatureCardProps } from "../../../types";
 const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
   return (
     <li className={styles.featureCard}>
+      <div className={styles.featureCard__content}>
         <img
             className={styles.featureCard__img}
             srcSet={`${imageData.x1} 1x,
@@ -17,6 +18,7 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
             
         />
       <div className={styles.featureCard__wrap}>
+      
         <BlockTitle
           text={title.text}
           number={title.number}
@@ -25,11 +27,14 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
           additionalClassName={"featureCardText"}
         />
         <p className={styles.featureCard__description}>{description}</p>
+        <div className={styles.featureCard__linkWrap}>
         <LinkButton
           link={"#"}
           title={"discover now"}
           className={"featureCard__link"}
         />
+        </div>
+        </div>
       </div>
     </li>
   );
