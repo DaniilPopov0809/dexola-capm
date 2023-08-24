@@ -1,9 +1,6 @@
 import { FeatureCardProps } from "../types";
-// import img_01x1 from "/src/images/features/01_@1x.webp";
-// import img_01x2 from "/src/images/features/01_@2x.webp";
-// import img_01x3 from "/src/images/features/01_@3x.webp";
 
-export const featuresMockData: FeatureCardProps[] = [
+ const featuresMockData: FeatureCardProps[] = [
   {
     id: "1",
     title: {
@@ -47,3 +44,5 @@ export const featuresMockData: FeatureCardProps[] = [
     },
   },
 ];
+
+export default featuresMockData;

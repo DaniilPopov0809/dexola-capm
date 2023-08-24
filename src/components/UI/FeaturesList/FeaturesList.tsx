@@ -1,4 +1,4 @@
-import { featuresMockData } from "../../../data/mockData";
+import  featuresMockData  from "../../../data/featuresMockData";
 import FeatureCard from "../FeatureCard/FeatureCard";
 import styles from "./FeaturesList.module.scss";
 

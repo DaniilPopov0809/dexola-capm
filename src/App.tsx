@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header";
 import Features from "./components/Features/Features";
+import TopNfts from "./components/TopNfts/TopNfts";
 import JoinUs from "./components/JoinUs/JoinUs";
 import Footer from "./components/Footer/Footer";
 
@@ -8,7 +9,8 @@ function App() {
     <>
       <Header />
       <main className="container">
-        <Features/>
+        <Features />
+        <TopNfts />
         <JoinUs />
       </main>
       <Footer />

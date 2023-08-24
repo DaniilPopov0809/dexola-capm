@@ -22,3 +22,12 @@ export interface InitialValue {
     description: string;
     imageData: ImageData;
   }
+
+  export interface TopNftsProps {
+    avatar: ImageData, 
+    name: string ,
+    level: string ,
+    gmaes: string ,
+    win: string ,
+    price: string ,
+}

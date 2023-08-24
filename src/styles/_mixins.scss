@@ -1,0 +1,12 @@
+@mixin responsive-font-size(
+  $baseFontsize,
+  $targetStart,
+  $targetEnd,
+  $startRange,
+  $endRange
+) {
+  font-size: calc(
+    #{$baseFontsize} + (#{$targetEnd - $targetStart} * ((100vw - #{$startRange}) /
+              #{$endRange - $startRange}))
+  );
+}

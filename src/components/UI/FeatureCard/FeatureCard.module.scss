@@ -24,11 +24,9 @@
   height: 100%;
 }
 
-
-
 .featureCard__wrap {
   position: relative;
- flex: 1;
+  flex: 1;
   padding: 16px 16px 24px 16px;
 
   @media screen and (min-width: $tablet) {
@@ -68,12 +66,9 @@
   }
 }
 
-  
 .featureCard__linkWrap {
   display: flex;
   justify-content: center;
   margin-top: auto;
   // align-self: flex-end;
-  
-  
 }
