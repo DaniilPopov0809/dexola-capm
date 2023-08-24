@@ -20,7 +20,11 @@ export interface InitialValue {
     id: string;
     title: TitleType;
     description: string;
-    imageData: ImageData;
+    imageData:{
+      mobile: ImageData;
+      tablet: ImageData;
+      desktop: ImageData;
+    } 
   }
 
   export interface TopNftsProps {

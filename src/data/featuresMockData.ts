@@ -1,6 +1,6 @@
 import { FeatureCardProps } from "../types";
 
- const featuresMockData: FeatureCardProps[] = [
+const featuresMockData: FeatureCardProps[] = [
   {
     id: "1",
     title: {
@@ -10,9 +10,21 @@ import { FeatureCardProps } from "../types";
     description:
       "The StarRunner Token the exclusive crypto currency fueling the adventure of the Play-to-Earn sensation.",
     imageData: {
-      x1: "/src/images/features/01_@1x.webp",
-      x2: "/src/images/features/01_@2x.webp",
-      x3: "/src/images/features/01_@3x.webp",
+      mobile: {
+        x1: "/src/images/features/01_mob@1x.webp",
+        x2: "/src/images/features/01_mob@2x.webp",
+        x3: "/src/images/features/01_mob@3x.webp",
+      },
+      tablet: {
+        x1: "/src/images/features/01_tab@1x.webp",
+        x2: "/src/images/features/01_tab@2x.webp",
+        x3: "/src/images/features/01_tab@3x.webp",
+      },
+      desktop: {
+        x1: "/src/images/features/01_desk@1x.webp",
+        x2: "/src/images/features/01_desk@2x.webp",
+        x3: "/src/images/features/01_desk@3x.webp",
+      },
     },
   },
   {
@@ -24,9 +36,21 @@ import { FeatureCardProps } from "../types";
     description:
       "Join a community of stakers, united by their passion for exploration, strategy, and gaming.",
     imageData: {
-      x1: "/src/images/features/02_@1x.webp",
-      x2: "/src/images/features/02_@2x.webp",
-      x3: "/src/images/features/02_@3x.webp",
+      mobile: {
+        x1: "/src/images/features/02_mob@1x.webp",
+        x2: "/src/images/features/02_mob@2x.webp",
+        x3: "/src/images/features/02_mob@3x.webp",
+      },
+      tablet: {
+        x1: "/src/images/features/02_tab@1x.webp",
+        x2: "/src/images/features/02_tab@2x.webp",
+        x3: "/src/images/features/02_tab@3x.webp",
+      },
+      desktop: {
+        x1: "/src/images/features/02_desk@1x.webp",
+        x2: "/src/images/features/02_desk@2x.webp",
+        x3: "/src/images/features/02_desk@3x.webp",
+      },
     },
   },
   {
@@ -38,9 +62,21 @@ import { FeatureCardProps } from "../types";
     description:
       "Every StarRunner NFT tells a story – YOUR story. This NFT encapsulates the essence of your journey.",
     imageData: {
-      x1: "/src/images/features/03_@1x.webp",
-      x2: "/src/images/features/03_@2x.webp",
-      x3: "/src/images/features/03_@3x.webp",
+      mobile: {
+        x1: "/src/images/features/03_mob@1x.webp",
+        x2: "/src/images/features/03_mob@2x.webp",
+        x3: "/src/images/features/03_mob@3x.webp",
+      },
+      tablet: {
+        x1: "/src/images/features/03_tab@1x.webp",
+        x2: "/src/images/features/03_tab@2x.webp",
+        x3: "/src/images/features/03_tab@3x.webp",
+      },
+      desktop: {
+        x1: "/src/images/features/03_desk@1x.webp",
+        x2: "/src/images/features/03_desk@2x.webp",
+        x3: "/src/images/features/03_desk@3x.webp",
+      },
     },
   },
 ];
