@@ -7,7 +7,7 @@ const TopNfts = () => {
       <BlockTitle
         text={"Top NFTs"}
         number={"02"}
-        className={"TopNfts"}
+        className={"topNfts"}
         titleTag={"h2"}
       />
     <NftTable/>

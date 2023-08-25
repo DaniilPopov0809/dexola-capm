@@ -28,10 +28,11 @@ export interface InitialValue {
   }
 
   export interface TopNftsProps {
+    id: string,
     avatar: ImageData, 
     name: string ,
     level: string ,
-    gmaes: string ,
+    games: string ,
     win: string ,
     price: string ,
 }
