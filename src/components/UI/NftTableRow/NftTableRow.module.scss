@@ -10,14 +10,13 @@
 }
 
 .row__cell {
-    @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     padding: 11px 16px;
   }
 
   @media screen and (min-width: $desktop) {
     padding: 11px 24px;
   }
-  
 }
 
 .row__img {
@@ -29,14 +28,8 @@
 
 .row__cellAvatar {
   width: 64px;
-// @media screen and (min-width: $tablet) {
-//     width: 9.2%;
-//   }
-
-//   @media screen and (min-width: $desktop) {
-//     width: 5.4%;
-//   }
 }
+
 .row__cellName {
   @media screen and (min-width: $tablet) {
     width: 34.5%;
@@ -48,43 +41,42 @@
 }
 
 .row__cellLevel {
-    @media screen and (min-width: $tablet) {
-        width: 16.7%;
-        padding: 11px 16px;
-      }
-    
-      @media screen and (min-width: $desktop) {
-        width: 15%;
-        padding: 11px 24px;
-      }
+  @media screen and (min-width: $tablet) {
+    width: 16.7%;
+    padding: 11px 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 15%;
+    padding: 11px 24px;
+  }
 }
 
 .row__cellGames {
-    @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
+    width: 13%;
+  }
 
-        width: 13%;
-      }
-    
-      @media screen and (min-width: $desktop) {
-        width: 14.5%;
-      }
+  @media screen and (min-width: $desktop) {
+    width: 14.5%;
+  }
 }
 .row__cellWin {
-    @media screen and (min-width: $tablet) {
-        width: 13.4%;
-      }
-    
-      @media screen and (min-width: $desktop) {
-        width: 14.2%;
-      }
+  @media screen and (min-width: $tablet) {
+    width: 13.4%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 14.2%;
+  }
 }
 
 .row__cellPrice {
-    @media screen and (min-width: $tablet) {
-        width: 13.2%;
-      }
-    
-      @media screen and (min-width: $desktop) {
-        width: 13.6%;
-      }
+  @media screen and (min-width: $tablet) {
+    width: 13.2%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 13.6%;
+  }
 }

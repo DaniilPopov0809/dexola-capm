@@ -8,12 +8,9 @@ const NftTableRow = ({
   games,
   win,
   price,
-}: TopNftsProps) => {
+}: TopNftsProps, ) => {
   return (
     <tr className={styles.row}>
-      {/* <th headers="sequenceNumber" scope="row">
-        1.
-      </th> */}
       <td headers="avatar" className={`${styles.row__cellAvatar}`}>
         <img
           className={styles.row__img}
