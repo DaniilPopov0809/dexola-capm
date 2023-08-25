@@ -8,16 +8,6 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
   return (
     <li className={styles.featureCard}>
       <div className={styles.featureCard__content}>
-        {/* <img
-            className={styles.featureCard__img}
-            srcSet={`${imageData.x1} 1x,
-                    ${imageData.x2} 2x,
-                    ${imageData.x3} 3x`}
-            src={imageData.x1}
-            alt="Astronaut"
-            // width="370"
-            
-        /> */}
         <picture>
           <source
             srcSet={`
@@ -48,7 +38,7 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
 
           <img
             src={`${mobile.x1}`}
-            alt="Astronaut"
+            alt={`${title.text} image`}
             className={styles.featureCard__img}
           />
         </picture>
@@ -60,7 +50,9 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
             titleTag={"h4"}
             additionalClassName={"featureCardText"}
           />
+          <div className={styles.featureCard__descriptionWrap}>
           <p className={styles.featureCard__description}>{description}</p>
+          </div>
           <div className={styles.featureCard__linkWrap}>
             <LinkButton
               link={"#"}

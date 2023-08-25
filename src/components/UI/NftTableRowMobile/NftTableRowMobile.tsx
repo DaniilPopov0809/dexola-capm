@@ -23,7 +23,7 @@ const NftTableRowMobile = ({
                     ${avatar.x2} 2x,
                     ${avatar.x3} 3x`}
           src={avatar.x1}
-          alt="Astronaut"
+          alt={`${name} image`}
           width="64"
           height="64"
         />
