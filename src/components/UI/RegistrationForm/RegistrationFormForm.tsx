@@ -76,6 +76,8 @@ const RegistrationForm = () => {
                       : ""
                   }`}
                   type="email"
+                  aria-label="Email"
+                  required
                   {...field}
                   placeholder="Enter email"
                 />
@@ -107,7 +109,13 @@ const RegistrationForm = () => {
               />
             )}
           </Field> */}
-            <Field className={styles.form__input} type="tel" name="phone" />
+            <Field
+              className={styles.form__input}
+              type="tel"
+              name="phone"
+              aria-label="Phone"
+              required
+            />
             <ErrorMessage
               className={styles.form__error}
               name="phone"
@@ -128,6 +136,8 @@ const RegistrationForm = () => {
                   }`}
                   type={isOpenEyePass ? "text" : "password"}
                   placeholder="Password"
+                  aria-label="Password"
+                  required
                   {...field}
                 />
                 <button
@@ -158,6 +168,8 @@ const RegistrationForm = () => {
                   }`}
                   type={isOpenEyeConfPass ? "text" : "password"}
                   placeholder="Confirm password"
+                  aria-label="Confirm password"
+                  required
                   {...field}
                 />
                 <button
@@ -177,12 +189,12 @@ const RegistrationForm = () => {
             )}
           </Field>
           <div className={styles.linkbutton__buttonWrap}>
-          <LinkButton
-            title={"Send it"}
-            type="submit"
-            disabled={isSubmitting}
-            className={"form__button"}
-          />
+            <LinkButton
+              title={"Send it"}
+              type="submit"
+              disabled={isSubmitting}
+              className={"form__button"}
+            />
           </div>
         </Form>
       )}

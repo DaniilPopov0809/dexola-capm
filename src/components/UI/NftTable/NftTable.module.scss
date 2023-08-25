@@ -1,0 +1,33 @@
+@import "/src/styles/variables";
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: $whiteColor;
+  border: none;
+
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
+}
+
+.table__head {
+  text-align: left;
+  @media screen and (min-width: $tablet) and (max-width: $tabletEnd) {
+    vertical-align: top;
+  }
+}
+
+.table__headCell {
+  @media screen and (min-width: $tablet) {
+    padding: 12px 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 12px 24px;
+  }
+}
+
+.table__headAvatar {
+  width: 64px;
+}

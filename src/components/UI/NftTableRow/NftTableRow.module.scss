@@ -1,0 +1,82 @@
+@import "/src/styles/variables";
+
+.row {
+  height: 80px;
+  &:nth-child(odd) {
+    background-color: $accentRowColor;
+    border-bottom: 1px solid $accentBlueColor;
+    border-top: 1px solid $accentBlueColor;
+  }
+}
+
+.row__cell {
+  @media screen and (min-width: $tablet) {
+    padding: 11px 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 11px 24px;
+  }
+}
+
+.row__img {
+  min-width: 64px;
+  min-height: 64px;
+  padding: 8px 0;
+  border-radius: 50%;
+}
+
+.row__cellAvatar {
+  width: 64px;
+}
+
+.row__cellName {
+  @media screen and (min-width: $tablet) {
+    width: 34.5%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 37.4%;
+  }
+}
+
+.row__cellLevel {
+  @media screen and (min-width: $tablet) {
+    width: 16.7%;
+    padding: 11px 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 15%;
+    padding: 11px 24px;
+  }
+}
+
+.row__cellGames {
+  @media screen and (min-width: $tablet) {
+    width: 13%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 14.5%;
+  }
+}
+.row__cellWin {
+  @media screen and (min-width: $tablet) {
+    width: 13.4%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 14.2%;
+  }
+}
+
+.row__cellPrice {
+  @media screen and (min-width: $tablet) {
+    width: 13.2%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 13.6%;
+  }
+}
