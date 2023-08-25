@@ -25,7 +25,7 @@ const BlockTitle = ({
 
   return (
     <TagName className={`${globalClass} ${styles.title} ${styles[className]}`}>
-      <span className={`${styles.title__text} ${styles[additionalClassName]}`}>
+      <span className={styles[additionalClassName]}>
         {text}
       </span>
       <span className={styles.title__number}>{number}</span>
