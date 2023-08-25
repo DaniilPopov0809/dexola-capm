@@ -21,7 +21,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   }
   if (link) {
     return (
-        <a href={link} className={compositeClassName}>
+        <a href={link} className={compositeClassName} target="_blank" rel="noopener nofollow noreferrer">
           {title}
         </a>
     );
