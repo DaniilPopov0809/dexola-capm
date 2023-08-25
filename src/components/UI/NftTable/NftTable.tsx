@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import nftMockData from "../../../data/nftMockData";
+import nftMockData from "../../../data/NftMockData";
 import NftTableRow from "../NftTableRow/NftTableRow";
 import NftTableRowMobile from "../NftTableRowMobile/NftTableRowMobile";
 import styles from "./NftTable.module.scss";
