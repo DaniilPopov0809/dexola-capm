@@ -1,4 +1,4 @@
-import MainLink from "../UI/Link/MainLink";
+import MainLink from "../UI/MainLink/MainLink";
 import logo from "../../images/logo.svg";
 import styles from "./Header.module.scss";
 
@@ -9,7 +9,12 @@ const Header = () => {
         <a className={styles.header__linkLogo} href="/">
           <img src={logo} alt="logo" width={35} height={20} />
         </a>
-        <MainLink link="#" title="Join Now" globalClassName={"linkButton"} localClassName="header__link" />
+        <MainLink
+          link="#"
+          title="Join Now"
+          globalClassName={"linkButton"}
+          localClassName="header__link"
+        />
       </div>
     </header>
   );

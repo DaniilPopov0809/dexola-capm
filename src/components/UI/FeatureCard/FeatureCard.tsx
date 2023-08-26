@@ -1,4 +1,4 @@
-import MainLink from "../Link/MainLink";
+import MainLink from "../MainLink/MainLink";
 import BlockTitle from "../BlockTitle/BlockTitle";
 import styles from "./FeatureCard.module.scss";
 import { FeatureCardProps } from "../../../types";
@@ -51,10 +51,10 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
             additionalClassName={"featureCardText"}
           />
           <div className={styles.featureCard__descriptionWrap}>
-          <p className={styles.featureCard__description}>{description}</p>
+            <p className={styles.featureCard__description}>{description}</p>
           </div>
           <div className={styles.featureCard__linkWrap}>
-          <MainLink
+            <MainLink
               link={"#"}
               title={"discover now"}
               target={"_blank"}
