@@ -1,25 +1,26 @@
+import { AnchorHTMLAttributes } from "react";
 import styles from "./MainLink.module.scss";
 
-interface MainLinkProps {
+interface MainLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement>  {
   link: string;
   title: string;
-  target: "_blank"| "_self"|"_parent"|"_top"|"framename";
   globalClassName: string;
   localClassName: string;
-  rel?: string;
 }
 
 const MainLink = ({
   link,
   title,
-  target,
   globalClassName,
   localClassName,
-  rel = "",
+  ...props
 }: MainLinkProps) => {
-  const compositeClassName: string = `${globalClassName} ${styles[localClassName]}`;
   return (
-    <a href={link} className={compositeClassName} target={target} rel={rel}>
+    <a
+      href={link}
+      className={`${globalClassName} ${styles[localClassName]}`}
+      {...props}
+    >
       {title}
     </a>
   );

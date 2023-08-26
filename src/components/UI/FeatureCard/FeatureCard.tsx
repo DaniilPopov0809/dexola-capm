@@ -1,4 +1,3 @@
-// import LinkButton from "../LinkButton/LinkButton";
 import MainLink from "../Link/MainLink";
 import BlockTitle from "../BlockTitle/BlockTitle";
 import styles from "./FeatureCard.module.scss";
@@ -63,11 +62,6 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
               localClassName={"featureCard__link"}
               rel={"noopener nofollow noreferrer"}
             />
-            {/* <LinkButton
-              link={"#"}
-              title={"discover now"}
-              className={"featureCard__link"}
-            /> */}
           </div>
         </div>
       </div>

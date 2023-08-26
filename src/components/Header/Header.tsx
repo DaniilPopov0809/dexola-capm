@@ -9,8 +9,7 @@ const Header = () => {
         <a className={styles.header__linkLogo} href="/">
           <img src={logo} alt="logo" width={35} height={20} />
         </a>
-        <MainLink link="#" title="Join Now" target={"_self"} globalClassName={"linkButton"} localClassName="header__link" />
-        {/* <LinkButton link="#" title="Join Now" className="header__link" /> */}
+        <MainLink link="#" title="Join Now" globalClassName={"linkButton"} localClassName="header__link" />
       </div>
     </header>
   );
