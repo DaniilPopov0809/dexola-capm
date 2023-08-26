@@ -1,4 +1,5 @@
-import LinkButton from "../LinkButton/LinkButton";
+// import LinkButton from "../LinkButton/LinkButton";
+import MainLink from "../Link/MainLink";
 import BlockTitle from "../BlockTitle/BlockTitle";
 import styles from "./FeatureCard.module.scss";
 import { FeatureCardProps } from "../../../types";
@@ -54,11 +55,19 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
           <p className={styles.featureCard__description}>{description}</p>
           </div>
           <div className={styles.featureCard__linkWrap}>
-            <LinkButton
+          <MainLink
+              link={"#"}
+              title={"discover now"}
+              target={"_blank"}
+              globalClassName={"linkButton"}
+              localClassName={"featureCard__link"}
+              rel={"noopener nofollow noreferrer"}
+            />
+            {/* <LinkButton
               link={"#"}
               title={"discover now"}
               className={"featureCard__link"}
-            />
+            /> */}
           </div>
         </div>
       </div>
