@@ -20,11 +20,12 @@ export interface FeatureCardProps {
   id: string;
   title: TitleType;
   description: string;
-  imageData: {
-    mobile: ImageData;
-    tablet: ImageData;
-    desktop: ImageData;
-  };
+  // imageData: {
+  //   mobile: ImageData;
+  //   tablet: ImageData;
+  //   desktop: ImageData;
+  // };
+  imageData: ImageData;
 }
 
 export interface TopNftsProps {

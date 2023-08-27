@@ -1,4 +1,4 @@
-@import "/src/styles/variables";
+@import "../../../styles/variables";
 
 .featureCard {
   display: flex;
@@ -40,9 +40,9 @@
 }
 
 .featureCard__img {
-  // object-fit: cover;
+  object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 236px;
   
 
 
@@ -50,14 +50,14 @@
   //   height: auto;
   // }
 
-  // @media screen and (min-width: $tablet) {
-  //   // height: 240px;
-  //   // height: auto;
-  // }
+  @media screen and (min-width: $tablet) {
+    height: 240px;
+    // height: auto;
+  }
 
-  // @media screen and (min-width: $desktop) {
-  //   // height: 307px;
-  // }
+  @media screen and (min-width: $desktop) {
+    height: 307px;
+  }
 }
 
 .featureCard__descriptionWrap {

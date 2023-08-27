@@ -4,11 +4,11 @@ import styles from "./FeatureCard.module.scss";
 import { FeatureCardProps } from "../../../types";
 
 const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
-  const { mobile, tablet, desktop } = imageData;
+  // const { mobile, tablet, desktop } = imageData;
   return (
     <li className={styles.featureCard}>
       <div className={styles.featureCard__content}>
-        <picture>
+        {/* <picture>
           <source
             srcSet={`
                     ${desktop.x1} 1x,
@@ -41,7 +41,17 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
             alt={`${title.text} image`}
             className={styles.featureCard__img}
           />
-        </picture>
+        </picture> */}
+        <img
+            className={styles.featureCard__img}
+            srcSet={`${imageData.x1} 1x,
+                    ${imageData.x2} 2x,
+                    ${imageData.x3} 3x`}
+            src={imageData.x1}
+            alt={`${title.text} image`}
+            // width="370"
+
+        />
         <div className={styles.featureCard__wrap}>
           <Title
             text={title.text}
