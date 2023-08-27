@@ -2,13 +2,19 @@ import styles from "./SocialNetworks.module.scss";
 import sprite from "../../../images/socialNetworkSprite.svg";
 import SocialNetworkLink from "../SocialNetworkLink/SocialNetworkLink";
 
+const dataIcon = [
+  `${sprite}#facebook`,
+  `${sprite}#instagram`,
+  `${sprite}#diskord`,
+  `${sprite}#telegram`,
+];
+
 const SocialNetwork = () => {
   return (
     <ul className={styles.social}>
-      <SocialNetworkLink width={32} height={32} path={`${sprite}#facebook`}/>
-      <SocialNetworkLink width={32} height={32} path={`${sprite}#instagram`}/>
-      <SocialNetworkLink width={32} height={32} path={`${sprite}#diskord`}/>
-      <SocialNetworkLink width={32} height={32} path={`${sprite}#telegram`}/>
+      {dataIcon.map((item) => (
+        <SocialNetworkLink width={32} height={32} path={item} />
+      ))}
     </ul>
   );
 };
