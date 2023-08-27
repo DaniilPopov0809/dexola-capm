@@ -1,37 +1,14 @@
 import styles from "./SocialNetworks.module.scss";
 import sprite from "../../../images/sprite.svg";
+import SocialNetworkLink from "../SocialNetworkLink/SocialNetworkLink";
 
 const SocialNetwork = () => {
   return (
     <ul className={styles.social}>
-      <li className={styles.social__item}>
-        <a className={styles.social__link} href="#" target="_blank" rel="noopener noreferrer">
-          <svg width={32} height={32}>
-            <use href={`${sprite}#facebook`} />
-          </svg>
-        </a>
-      </li>
-      <li className={styles.social__item}>
-        <a className={styles.social__link} href="#" target="_blank" rel="noopener noreferrer">
-          <svg width={32} height={32}>
-            <use href={`${sprite}#instagram`} />
-          </svg>
-        </a>
-      </li>
-      <li className={styles.social__item}>
-        <a className={styles.social__link} href="#" target="_blank" rel="noopener noreferrer">
-          <svg width={32} height={32}>
-            <use href={`${sprite}#diskord`} />
-          </svg>
-        </a>
-      </li>
-      <li className={styles.social__item}>
-        <a className={styles.social__link} href="#" target="_blank" rel="noopener noreferrer">
-          <svg width={32} height={32}>
-            <use href={`${sprite}#telegram`} />
-          </svg>
-        </a>
-      </li>
+      <SocialNetworkLink width={32} height={32} path={`${sprite}#facebook`}/>
+      <SocialNetworkLink width={32} height={32} path={`${sprite}#instagram`}/>
+      <SocialNetworkLink width={32} height={32} path={`${sprite}#diskord`}/>
+      <SocialNetworkLink width={32} height={32} path={`${sprite}#telegram`}/>
     </ul>
   );
 };
