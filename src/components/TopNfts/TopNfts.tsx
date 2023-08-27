@@ -1,16 +1,17 @@
-import BlockTitle from "../UI/BlockTitle/BlockTitle";
+import TitleBlock from "../UI/TitleBlock/TitleBlock";
 import NftTable from "../UI/NftTable/NftTable";
 
 const TopNfts = () => {
   return (
     <section>
-      <BlockTitle
+      <TitleBlock
         text={"Top NFTs"}
         number={"02"}
-        className={"topNfts"}
         titleTag={"h2"}
+        globalClassName={"title__h2"}
+        localClassName={"topNfts"}
       />
-    <NftTable/>
+      <NftTable />
     </section>
   );
 };
