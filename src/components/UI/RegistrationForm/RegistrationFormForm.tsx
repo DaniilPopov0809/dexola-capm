@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
 // import PhoneInput from 'react-phone-input-2';
 import { InitialValue } from "../../../types";
-import LinkButton from "../LinkButton/LinkButton";
+import MainButton from "../MainButton/MainButton";
 import validationRegitrationForm from "../../../helpers/validationRegistrationForm";
 
 import styles from "./RegistrationForm.module.scss";
@@ -189,11 +189,12 @@ const RegistrationForm = () => {
             )}
           </Field>
           <div className={styles.linkbutton__buttonWrap}>
-            <LinkButton
+            <MainButton
               title={"Send it"}
               type="submit"
               disabled={isSubmitting}
-              className={"form__button"}
+              globalClassName={"linkButton"}
+              localClassName={"form__button"}
             />
           </div>
         </Form>

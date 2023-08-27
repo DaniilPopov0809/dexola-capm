@@ -1,0 +1,22 @@
+.linkButton {
+    position: relative;
+  
+    color: $whiteColor;
+    font-family: $bodyFont;
+    font-size: $bodyTabletFontsize;
+    font-weight: $mediumWeight;
+    line-height: 1.5;
+  
+    text-transform: uppercase;
+  
+    cursor: pointer;
+  
+    background-color: $buttonColor;
+    border: none;
+  
+    transition: background-color $animation;
+  
+    &:hover {
+      background-color: $buttonHoverColor;
+    }
+  }

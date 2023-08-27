@@ -14,16 +14,24 @@
   text-align: center;
 
   @media screen and (min-width: $mobile) {
+    grid-template-areas:
+      "designer"
+      "social"
+      "rights";
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
 
   @media screen and (min-width: $tablet) {
+    grid-template-areas:
+      "designer social"
+      "rights social";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
 
   @media screen and (min-width: $desktop) {
+    grid-template-areas: "designer social rights";
     grid-template-columns: 1fr 480px 1fr;
     grid-template-rows: auto;
   }
@@ -31,43 +39,35 @@
 
 .footer__social {
   @media screen and (min-width: $tablet) {
-    grid-column: 2/3;
-    grid-row: 1/3;
+    grid-area: social;
   }
 
   @media screen and (min-width: $desktop) {
-    grid-column: 2/3;
     border-left: 1px solid $accentBlueColor;
     border-right: 1px solid $accentBlueColor;
   }
 }
 
 .footer__designer {
+  grid-area: designer;
   @media screen and (min-width: $tablet) {
-    grid-column: 1/2;
-    grid-row: 1/2;
     text-align: start;
     align-self: self-end;
   }
 
   @media screen and (min-width: $desktop) {
-    grid-column: 1/2;
-    grid-row: 1/3;
     align-self: center;
   }
 }
 
 .footer__rights {
+  grid-area: rights;
   @media screen and (min-width: $tablet) {
-    grid-column: 1/2;
-    grid-row: 2/3;
     text-align: start;
     align-self: self-start;
   }
 
   @media screen and (min-width: $desktop) {
-    grid-column: 3/4;
-    grid-row: 1/3;
     text-align: end;
     align-self: center;
   }

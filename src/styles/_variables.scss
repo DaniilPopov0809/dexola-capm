@@ -18,19 +18,23 @@ $titleSubtitleFont: "Kanit", sans-serif;
 $normalWeight: 400;
 $mediumWeight: 500;
 
-$bodyMobileFontsize: 14px;
-$bodyTabletFontsize: 16px;
-$bodyDesktopFontsize: 18px;
+$letterSpacingMobile: -0.0175rem;
+$letterSpacingTablet: -0.02rem;
+$letterSpacingDesktop: -0.0225rem;
 
-$subtitleMobileFontsize: 16px;
-$subtitleTabletFontsize: 20px;
-$subtitleDesktopFontsize: 24px;
+$bodyMobileFontsize: 0.875rem;//14px;
+$bodyTabletFontsize: 1rem;//16px;
+$bodyDesktopFontsize: 1.125rem;//18px;
 
-$titleMobileFontsize: 48px;
-$titleTabletFontsize: 112px;
-$titleDesktopFontsize: 140px;
+$subtitleMobileFontsize: 1rem;//16px;
+$subtitleTabletFontsize: 1.25rem;//20px;
+$subtitleDesktopFontsize: 1.5rem;//24px;
 
-$titleHeroMobileFontsize: 120px;
+$titleMobileFontsize:  3rem;//48px;
+$titleTabletFontsize: 7rem;//112px;
+$titleDesktopFontsize: 8.75rem; //140px;
+
+$titleHeroMobileFontsize: 7.5rem;//120px;
 
 $mobile: 375px;
 $mobileEnd: 743px;

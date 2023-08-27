@@ -41,14 +41,6 @@
   }
 }
 
-.joinUs{
-  margin-bottom: 27px;
-}
-
-.topNfts{
-  margin-bottom: 32px;
-}
-
 .joinUs,
 .topNfts {
   @media screen and (min-width: $tablet) {
@@ -58,6 +50,14 @@
   @media screen and (min-width: $desktop) {
     margin-bottom: 90px;
   }
+}
+
+.joinUs {
+  margin-bottom: 27px;
+}
+
+.topNfts {
+  margin-bottom: 32px;
 }
 
 .features {
@@ -91,9 +91,14 @@
   }
 }
 
+.title.subTitle {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 .featureCardText {
   margin-left: 16px;
-  
 
   @media screen and (min-width: $tablet) {
     margin-left: 0;
@@ -103,4 +108,3 @@
     margin-left: 16px;
   }
 }
-

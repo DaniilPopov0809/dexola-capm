@@ -1,5 +1,5 @@
-import LinkButton from "../LinkButton/LinkButton";
-import BlockTitle from "../BlockTitle/BlockTitle";
+import MainLink from "../MainLink/MainLink";
+import Title from "../Title/Title";
 import styles from "./FeatureCard.module.scss";
 import { FeatureCardProps } from "../../../types";
 
@@ -8,16 +8,6 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
   return (
     <li className={styles.featureCard}>
       <div className={styles.featureCard__content}>
-        {/* <img
-            className={styles.featureCard__img}
-            srcSet={`${imageData.x1} 1x,
-                    ${imageData.x2} 2x,
-                    ${imageData.x3} 3x`}
-            src={imageData.x1}
-            alt="Astronaut"
-            // width="370"
-            
-        /> */}
         <picture>
           <source
             srcSet={`
@@ -48,24 +38,30 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
 
           <img
             src={`${mobile.x1}`}
-            alt="Astronaut"
+            alt={`${title.text} image`}
             className={styles.featureCard__img}
           />
         </picture>
         <div className={styles.featureCard__wrap}>
-          <BlockTitle
+          <Title
             text={title.text}
             number={title.number}
-            className={"featureCard"}
+            globalClassName={"title__h4"}
+            localClassName={"featureCard"}
             titleTag={"h4"}
             additionalClassName={"featureCardText"}
           />
-          <p className={styles.featureCard__description}>{description}</p>
+          <div className={styles.featureCard__descriptionWrap}>
+            <p className={styles.featureCard__description}>{description}</p>
+          </div>
           <div className={styles.featureCard__linkWrap}>
-            <LinkButton
+            <MainLink
               link={"#"}
               title={"discover now"}
-              className={"featureCard__link"}
+              target={"_blank"}
+              globalClassName={"linkButton"}
+              localClassName={"featureCard__link"}
+              rel={"noopener nofollow noreferrer"}
             />
           </div>
         </div>
