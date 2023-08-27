@@ -5,7 +5,7 @@ import longArrow from "../../images/longArrow.svg";
 
 const JoinUs = () => {
   return (
-    <section className={styles.joinUs}>
+    <section id="joinUs" className={styles.joinUs}>
       <TitleBlock
         text={"Join Us"}
         number={"03"}

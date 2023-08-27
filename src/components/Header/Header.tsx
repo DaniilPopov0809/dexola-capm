@@ -10,7 +10,7 @@ const Header = () => {
           <img src={logo} alt="logo" width={35} height={20} />
         </a>
         <MainLink
-          link="#"
+          link="#joinUs"
           title="Join Now"
           globalClassName={"linkButton"}
           localClassName="header__link"
