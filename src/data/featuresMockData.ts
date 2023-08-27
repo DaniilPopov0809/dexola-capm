@@ -30,87 +30,96 @@ import { FeatureCardProps } from "../types";
 // import image03Desk2x from "../images/features/03_desk@2x.webp";
 // import image03Desk3x from "../images/features/03_desk@3x.webp";
 
+import image01x1 from "../images/features/01_@1x.webp";
+import image01x2 from "../images/features/01_@2x.webp";
+import image01x3 from "../images/features/01_@3x.webp";
 
+import image02x1 from "../images/features/02_@1x.webp";
+import image02x2 from "../images/features/02_@2x.webp";
+import image02x3 from "../images/features/02_@3x.webp";
 
+import image03x1 from "../images/features/03_@1x.webp";
+import image03x2 from "../images/features/03_@2x.webp";
+import image03x3 from "../images/features/03_@3x.webp";
 
 const featuresMockData: FeatureCardProps[] = [
   // {
-//     id: "1",
-//     title: {
-//       text: "STRU Token sale",
-//       number: "01",
-//     },
-//     description:
-//       "The StarRunner Token the exclusive crypto currency fueling the adventure of the Play-to-Earn sensation.",
-//     imageData: {
-//       mobile: {
-//         x1: image01Mob1x,
-//         x2: image01Mob2x,
-//         x3: image01Mob3x,
-//       },
-//       tablet: {
-//         x1: image01Tab1x,
-//         x2: image01Tab2x,
-//         x3: image01Tab3x,
-//       },
-//       desktop: {
-//         x1: image01Desk1x,
-//         x2: image01Desk2x,
-//         x3: image01Desk3x,
-//       },
-//     },
-//   },
-//   {
-//     id: "2",
-//     title: {
-//       text: "Staking",
-//       number: "02",
-//     },
-//     description:
-//       "Join a community of stakers, united by their passion for exploration, strategy, and gaming.",
-//       imageData: {
-//         mobile: {
-//           x1: image02Mob1x,
-//           x2: image02Mob2x,
-//           x3: image02Mob3x,
-//         },
-//         tablet: {
-//           x1: image02Tab1x,
-//           x2: image02Tab2x,
-//           x3: image02Tab3x,
-//         },
-//         desktop: {
-//           x1: image02Desk1x,
-//           x2: image02Desk2x,
-//           x3: image02Desk3x,
-//         },
-//       },
-//   },
-//   {
-//     id: "3",
-//     title: {
-//       text: "NFT minting",
-//       number: "03",
-//     },
-//     description:
-//       "Every StarRunner NFT tells a story – YOUR story. This NFT encapsulates the essence of your journey.",
-//       imageData: {
-//         mobile: {
-//           x1: image03Mob1x,
-//           x2: image03Mob2x,
-//           x3: image03Mob3x,
-//         },
-//         tablet: {
-//           x1: image03Tab1x,
-//           x2: image03Tab2x,
-//           x3: image03Tab3x,
-//         },
-//         desktop: {
-//           x1: image03Desk1x,
-//           x2: image03Desk2x,
-//           x3: image03Desk3x,
-//         },
-//       },
+  //     id: "1",
+  //     title: {
+  //       text: "STRU Token sale",
+  //       number: "01",
+  //     },
+  //     description:
+  //       "The StarRunner Token the exclusive crypto currency fueling the adventure of the Play-to-Earn sensation.",
+  //     imageData: {
+  //       mobile: {
+  //         x1: image01Mob1x,
+  //         x2: image01Mob2x,
+  //         x3: image01Mob3x,
+  //       },
+  //       tablet: {
+  //         x1: image01Tab1x,
+  //         x2: image01Tab2x,
+  //         x3: image01Tab3x,
+  //       },
+  //       desktop: {
+  //         x1: image01Desk1x,
+  //         x2: image01Desk2x,
+  //         x3: image01Desk3x,
+  //       },
+  //     },
+  //   },
+  //   {
+  //     id: "2",
+  //     title: {
+  //       text: "Staking",
+  //       number: "02",
+  //     },
+  //     description:
+  //       "Join a community of stakers, united by their passion for exploration, strategy, and gaming.",
+  //       imageData: {
+  //         mobile: {
+  //           x1: image02Mob1x,
+  //           x2: image02Mob2x,
+  //           x3: image02Mob3x,
+  //         },
+  //         tablet: {
+  //           x1: image02Tab1x,
+  //           x2: image02Tab2x,
+  //           x3: image02Tab3x,
+  //         },
+  //         desktop: {
+  //           x1: image02Desk1x,
+  //           x2: image02Desk2x,
+  //           x3: image02Desk3x,
+  //         },
+  //       },
+  //   },
+  //   {
+  //     id: "3",
+  //     title: {
+  //       text: "NFT minting",
+  //       number: "03",
+  //     },
+  //     description:
+  //       "Every StarRunner NFT tells a story – YOUR story. This NFT encapsulates the essence of your journey.",
+  //       imageData: {
+  //         mobile: {
+  //           x1: image03Mob1x,
+  //           x2: image03Mob2x,
+  //           x3: image03Mob3x,
+  //         },
+  //         tablet: {
+  //           x1: image03Tab1x,
+  //           x2: image03Tab2x,
+  //           x3: image03Tab3x,
+  //         },
+  //         desktop: {
+  //           x1: image03Desk1x,
+  //           x2: image03Desk2x,
+  //           x3: image03Desk3x,
+  //         },
+  //       },
   // },
   {
     id: "1",
@@ -121,9 +130,9 @@ const featuresMockData: FeatureCardProps[] = [
     description:
       "The StarRunner Token the exclusive crypto currency fueling the adventure of the Play-to-Earn sensation.",
     imageData: {
-      x1: "../images/features/01_@1x.webp",
-      x2: "../images/features/01_@2x.webp",
-      x3: "../images/features/01_@3x.webp",
+      x1: image01x1,
+      x2: image01x2,
+      x3: image01x3,
     },
   },
   {
@@ -135,9 +144,9 @@ const featuresMockData: FeatureCardProps[] = [
     description:
       "Join a community of stakers, united by their passion for exploration, strategy, and gaming.",
     imageData: {
-      x1: "../images/features/02_@1x.webp",
-      x2: "../images/features/02_@2x.webp",
-      x3: "../images/features/02_@3x.webp",
+      x1: image02x1,
+      x2: image02x2,
+      x3: image02x3,
     },
   },
   {
@@ -149,9 +158,9 @@ const featuresMockData: FeatureCardProps[] = [
     description:
       "Every StarRunner NFT tells a story – YOUR story. This NFT encapsulates the essence of your journey.",
     imageData: {
-      x1: "../images/features/03_@1x.webp",
-      x2: "../images/features/03_@2x.webp",
-      x3: "../images/features/03_@3x.webp",
+      x1: image03x1,
+      x2: image03x2,
+      x3: image03x3,
     },
   },
 ];
