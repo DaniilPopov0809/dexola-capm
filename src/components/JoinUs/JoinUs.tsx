@@ -15,7 +15,7 @@ const JoinUs = () => {
       />
       <div className={styles.joinUs__wrap}>
         <div className={styles.joinUs__descriptionBlockWrap}>
-          <div className={styles.features__subTitileWrap}>
+          <div className={styles.features__subTitleWrap}>
             <TitleBlock
               text={"Experience the Power of StarRunner"}
               titleTag={"h3"}

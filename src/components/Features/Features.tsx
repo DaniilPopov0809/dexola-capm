@@ -13,7 +13,7 @@ const Features = () => {
         localClassName={"features"}
       />
       <div className={styles.features__descriptionWrap}>
-        <div className={styles.features__subTitileWrap}>
+        <div className={styles.features__subTitleWrap}>
           <TitleBlock
             text={"About StarRunner"}
             titleTag={"h3"}
