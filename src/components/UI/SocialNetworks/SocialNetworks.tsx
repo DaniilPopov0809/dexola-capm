@@ -1,5 +1,5 @@
 import styles from "./SocialNetworks.module.scss";
-import sprite from "../../../images/sprite.svg";
+import sprite from "../../../images/socialNetworkSprite.svg";
 import SocialNetworkLink from "../SocialNetworkLink/SocialNetworkLink";
 
 const SocialNetwork = () => {
