@@ -4,17 +4,6 @@ html {
 
 body {
   background-color: $backgroundColor;
-  // font-size: $bodyMobileFontsize;
-
-  // @media screen and (min-width: $tablet) {
-  //   // font-size: $bodyTabletFontsize;
-  //   letter-spacing: -0.32px;
-  // }
-
-  // @media screen and (min-width: $desktop) {
-  //   // font-size: $bodyDesktopFontsize;
-  //   letter-spacing: -0.36px;
-  // }
 }
 
 h1,
@@ -43,45 +32,4 @@ td,
 tr {
   padding: 0;
   margin: 0;
-}
-
-.mainFontSize {
-  font-family: $bodyFont;
-  color: $lightGreyColor;
-  transition: font-size $animation;
-
-  @media screen and (min-width: $mobile) {
-    font-size: $bodyMobileFontsize;
-    letter-spacing: $letterSpacingMobile;
-  }
-
-  @media screen and (min-width: $tablet) {
-    font-size: $bodyTabletFontsize;
-    letter-spacing: $letterSpacingTablet;
-  }
-
-  @media (min-width: $desktop) {
-    font-size: $bodyDesktopFontsize;
-    letter-spacing: $letterSpacingDesktop;
-  }
-  // transition: font-size $animation;
-
-  // @media (min-width: $mobile) and (max-width: $mobileEnd) {
-  //   letter-spacing: -0.32px;
-  //   font-size: calc(
-  //     $bodyMobileFontsize + (16 - 14) * ((100vw - $mobile) / (743 - 375))
-  //   );
-  // }
-  // @media (min-width: $tablet) and (max-width: $tabletEnd) {
-  //   letter-spacing: -0.36px;
-  //   font-size: calc(
-  //     $bodyTabletFontsize + (18 - 16) * ((100vw - $tablet) / (1439 - 744))
-  //   );
-  // }
-
-  // @media (min-width: $mobile) and (max-width: $tabletEnd) {
-  //   font-size: calc(
-  //     $bodyMobileFontsize + (18 - 14) * ((100vw - $mobile) / (1439 - 375))
-  //   );
-  // }
 }

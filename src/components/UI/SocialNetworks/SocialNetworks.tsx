@@ -2,7 +2,7 @@ import styles from "./SocialNetworks.module.scss";
 import sprite from "../../../images/socialNetworkSprite.svg";
 import SocialNetworkLink from "../SocialNetworkLink/SocialNetworkLink";
 
-const dataIcon = [
+const dataIcon:string[] = [
   `${sprite}#facebook`,
   `${sprite}#instagram`,
   `${sprite}#diskord`,
