@@ -1,4 +1,5 @@
 import { FeatureCardProps } from "../types";
+import image01Mob1x from "../images/features/01_mob@1x.webp";
 
 const featuresMockData: FeatureCardProps[] = [
   {
@@ -11,7 +12,7 @@ const featuresMockData: FeatureCardProps[] = [
       "The StarRunner Token the exclusive crypto currency fueling the adventure of the Play-to-Earn sensation.",
     imageData: {
       mobile: {
-        x1: "/assets/features/01_mob@1x.webp",
+        x1: image01Mob1x,
         x2: "/assets/features/01_mob@2x.webp",
         x3: "/assets/features/01_mob@3x.webp",
       },
