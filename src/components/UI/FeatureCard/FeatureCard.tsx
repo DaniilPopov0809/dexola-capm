@@ -1,5 +1,5 @@
 import MainLink from "../MainLink/MainLink";
-import TitleBlock from "../TitleBlock/TitleBlock";
+import Title from "../Title/Title";
 import styles from "./FeatureCard.module.scss";
 import { FeatureCardProps } from "../../../types";
 
@@ -43,7 +43,7 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
           />
         </picture>
         <div className={styles.featureCard__wrap}>
-          <TitleBlock
+          <Title
             text={title.text}
             number={title.number}
             globalClassName={"title__h4"}

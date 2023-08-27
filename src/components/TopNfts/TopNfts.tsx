@@ -1,10 +1,10 @@
-import TitleBlock from "../UI/TitleBlock/TitleBlock";
+import Title from "../UI/Title/Title";
 import NftTable from "../UI/NftTable/NftTable";
 
 const TopNfts = () => {
   return (
     <section>
-      <TitleBlock
+      <Title
         text={"Top NFTs"}
         number={"02"}
         titleTag={"h2"}

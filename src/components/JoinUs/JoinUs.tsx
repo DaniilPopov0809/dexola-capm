@@ -1,12 +1,12 @@
 import RegistrationForm from "../UI/RegistrationForm/RegistrationFormForm";
-import TitleBlock from "../UI/TitleBlock/TitleBlock";
+import Title from "../UI/Title/Title";
 import styles from "./JoinUs.module.scss";
 import longArrow from "../../images/longArrow.svg";
 
 const JoinUs = () => {
   return (
     <section id="joinUs" className={styles.joinUs}>
-      <TitleBlock
+      <Title
         text={"Join Us"}
         number={"03"}
         titleTag={"h2"}
@@ -16,7 +16,7 @@ const JoinUs = () => {
       <div className={styles.joinUs__wrap}>
         <div className={styles.joinUs__descriptionBlockWrap}>
           <div className={styles.features__subTitleWrap}>
-            <TitleBlock
+            <Title
               text={"Experience the Power of StarRunner"}
               titleTag={"h3"}
               globalClassName={"title__h3"}

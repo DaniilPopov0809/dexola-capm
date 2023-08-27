@@ -1,4 +1,4 @@
-import styles from "./TitleBlock.module.scss";
+import styles from "./Title.module.scss";
 
 type TitleTag = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
@@ -11,7 +11,7 @@ interface TitleProps {
   additionalClassName?: string;
 }
 
-const TitleBlock = ({
+const Title = ({
   text,
   number = "",
   titleTag,
@@ -31,4 +31,4 @@ const TitleBlock = ({
   );
 };
 
-export default TitleBlock;
+export default Title;

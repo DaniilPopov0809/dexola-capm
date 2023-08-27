@@ -1,11 +1,11 @@
-import TitleBlock from "../UI/TitleBlock/TitleBlock";
+import Title from "../UI/Title/Title";
 import FeaturesList from "../UI/FeaturesList/FeaturesList";
 import styles from "./Features.module.scss";
 
 const Features = () => {
   return (
     <section className={styles.features}>
-      <TitleBlock
+      <Title
         text={"Features"}
         number={"02"}
         titleTag={"h2"}
@@ -14,7 +14,7 @@ const Features = () => {
       />
       <div className={styles.features__descriptionWrap}>
         <div className={styles.features__subTitleWrap}>
-          <TitleBlock
+          <Title
             text={"About StarRunner"}
             titleTag={"h3"}
             globalClassName={"title__h3"}
