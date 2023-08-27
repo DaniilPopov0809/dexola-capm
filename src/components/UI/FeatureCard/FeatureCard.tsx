@@ -54,7 +54,7 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
         />
         <div className={styles.featureCard__wrap}>
           <Title
-            text={title.text}
+            children={title.text}
             number={title.number}
             globalClassName={"title__h4"}
             localClassName={"featureCard"}

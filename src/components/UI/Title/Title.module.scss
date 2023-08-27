@@ -41,6 +41,10 @@
   }
 }
 
+.hero {
+  border: none;
+}
+
 .joinUs,
 .topNfts {
   @media screen and (min-width: $tablet) {
@@ -106,5 +110,22 @@
 
   @media screen and (min-width: $desktop) {
     margin-left: 16px;
+  }
+}
+
+
+.hero {
+  display: inline-block;
+  white-space: nowrap;
+  animation: heroText 10s linear infinite normal;
+  border: none;
+}
+
+@keyframes heroText {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }

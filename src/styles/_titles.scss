@@ -12,6 +12,14 @@
   font-weight: $mediumWeight;
   line-height: 1.25;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    font-size: $titleHeroTabletFontsize;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: $titleHeroDesktopFontsize;
+  }
 }
 
 .title__h2 {
@@ -41,8 +49,6 @@
   // @media (min-width: $mobile) and (max-width: $tabletEnd) {
   //   font-size: calc($titleMobileFontsize + (140 - 48) * ((100vw - $mobile) / (1439 - 375)));
   // }
-
- 
 }
 
 .title__h3,
