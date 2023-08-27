@@ -4,9 +4,9 @@ const nftMockData: TopNftsProps[] =  [
     {
     id: "1",
     avatar: {
-        x1: "/src/images/topNfts/10@1x.webp",
-        x2: "/src/images/topNfts/10@2x.webp",
-        x3: "/src/images/topNfts/10@3x.webp",
+        x1: "./src/images/topNfts/10@1x.webp",
+        x2: "./src/images/topNfts/10@2x.webp",
+        x3: "./src/images/topNfts/10@3x.webp",
     }, 
     name: "Legendary Artifact",
     level: "Legendary",
@@ -17,9 +17,9 @@ const nftMockData: TopNftsProps[] =  [
 {
     id: "2",
     avatar: {
-        x1: "/src/images/topNfts/3@1x.webp",
-        x2: "/src/images/topNfts/3@2x.webp",
-        x3: "/src/images/topNfts/3@3x.webp",
+        x1: "./src/images/topNfts/3@1x.webp",
+        x2: "./src/images/topNfts/3@2x.webp",
+        x3: "./src/images/topNfts/3@3x.webp",
     }, 
     name: "Epic Warrior",
     level: "Rare",
@@ -30,9 +30,9 @@ const nftMockData: TopNftsProps[] =  [
 {
     id: "3",
     avatar: {
-        x1: "/src/images/topNfts/5@1x.webp",
-        x2: "/src/images/topNfts/5@2x.webp",
-        x3: "/src/images/topNfts/5@3x.webp",
+        x1: "./src/images/topNfts/5@1x.webp",
+        x2: "./src/images/topNfts/5@2x.webp",
+        x3: "./src/images/topNfts/5@3x.webp",
     }, 
     name: "Mystic Spellbook",
     level: "Common",
