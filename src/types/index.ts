@@ -10,7 +10,7 @@ type TitleType = {
   number: string;
 };
 
-type ImageData = {
+export type ImageData = {
   x1: string;
   x2: string;
   x3: string;
