@@ -93,11 +93,15 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background: url("../../images/eyeClosed.svg");
+  background: url("../../../images/eyeClosed.svg");
+  
 }
 
 .form__toggle.open::after {
-  background: url("../../images/eyeOpened.svg");
+  background: url("../../../images/eyeOpened.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .form__error {

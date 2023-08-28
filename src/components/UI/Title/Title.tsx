@@ -1,9 +1,9 @@
 import styles from "./Title.module.scss";
-import {ReactNode} from "react";
+
 type TitleTag = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
 interface TitleProps {
-  children: ReactNode;
+  text: string;
   number?: string;
   titleTag: TitleTag;
   globalClassName: string;
@@ -12,7 +12,7 @@ interface TitleProps {
 }
 
 const Title = ({
-  children,
+  text,
   number = "",
   titleTag,
   globalClassName,
@@ -25,7 +25,7 @@ const Title = ({
     <TagName
       className={`${globalClassName} ${styles.title} ${styles[localClassName]}`}
     >
-      <span className={styles[additionalClassName]}>{children}</span>
+      <span className={styles[additionalClassName]}>{text}</span>
       {number && <span className={styles.title__number}>{number}</span>}
     </TagName>
   );
