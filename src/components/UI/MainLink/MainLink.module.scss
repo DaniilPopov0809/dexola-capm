@@ -2,11 +2,14 @@
 
 .header__link {
     display: inline-block;
-    padding: 10px 16px 10px 48px;
-  
+    padding: 10px 16px 10px 48px; 
+    
     font-size: $bodyMobileFontsize;
-    line-height: 1.5;
-    letter-spacing: 0.6px;
+    line-height: normal;
+    letter-spacing: 0.28px;
+   
+    // letter-spacing: 0.6px;
+
   
     @media screen and (min-width: $tablet) {
       padding: 12px 66px 12px 89px;
@@ -14,25 +17,30 @@
       font-size: $bodyTabletFontsize;
       text-transform: none;
       // line-height: 1.5;
-      letter-spacing: 0.32px;
+      
     }
   }
 
-  .header__link::before {
+  .header__linkTextWrap {
+    display: inline-block;
+    position: relative;
+  }
+
+  .header__linkTextWrap::before {
     content: "";
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    left: 16px;
-    width: 24px;
-    height: 17px;
+    left: -16px;
+    width: 16px;
+    height: 16px;
     background-image: url("../../../images/arrow.svg");
   
-    @media screen and (min-width: $tablet) {
-      width: 16px;
-      height: 16px;
-      left: 66px;
-    }
+    // @media screen and (min-width: $tablet) {
+    //   width: 16px;
+    //   height: 16px;
+    //   left: 66px;
+    // }
   }
 
 

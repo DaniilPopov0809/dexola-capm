@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 .hero {
-  padding-top: 70px;
+  padding-top: 41px;
 
   display: grid;
 
@@ -12,21 +12,19 @@
   grid-template-columns: 1fr;
   // grid-template-rows: auto;
 
+  @media screen and (min-width: $tablet) {
+    padding-top: 78px;
+  }
+
   @media screen and (min-width: $desktop) {
     grid-template-areas:
       "description imageList"
       "title title";
      
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
 }
-
-
-
-
-
-
 
 .hero__list {
   grid-area: imageList;
