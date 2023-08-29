@@ -1,11 +1,12 @@
 import { AnchorHTMLAttributes } from "react";
 import styles from "./MainLink.module.scss";
 
-interface MainLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement>  {
+interface MainLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   link: string;
   title: string;
   globalClassName: string;
   localClassName: string;
+  additionalClassName?: string;
 }
 
 const MainLink = ({
@@ -13,6 +14,7 @@ const MainLink = ({
   title,
   globalClassName,
   localClassName,
+  additionalClassName = "",
   ...props
 }: MainLinkProps) => {
   return (
@@ -21,7 +23,7 @@ const MainLink = ({
       className={`${globalClassName} ${styles[localClassName]}`}
       {...props}
     >
-      {title}
+      <span className={styles[additionalClassName]}>{title}</span>
     </a>
   );
 };

@@ -38,35 +38,44 @@
 
 .featureCard__link {
     
-    padding: 12px 78px 12px 100px;
+    // padding: 12px 78px 12px 100px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    position: relative;
   
-    @media screen and (min-width: $tablet) {
-      padding: 12px 29px 12px 46px;
-    }
+    // @media screen and (min-width: $tablet) {
+    //   padding: 12px 29px 12px 46px;
+    // }
   
-    @media screen and (min-width: $desktop) {
-      padding: 12px 82px 12px 105px;
-    }
+    // @media screen and (min-width: $desktop) {
+    //   padding: 12px 82px 12px 105px;
+    // }
   }
   
-.featureCard__link::before {
+  .featureCard__linkTextWrap {
+    position: relative;
+    display: inline-block;
+  }
+
+.featureCard__linkTextWrap::before {
     content: "";
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    left: 78px;
+    left: -16px;
     width: 16px;
     height: 16px;
     background-image: url("../../../images/arrow.svg");
   
     @media screen and (min-width: $tablet) {
       width: 10px;
-      left: 29px;
+      // left: 29px;
     }
   
     @media screen and (min-width: $desktop) {
       width: 16px;
-      left: 83px;
+      // left: 83px;
     }
   }
   

@@ -196,13 +196,14 @@ const RegistrationForm = () => {
               </div>
             )}
           </Field>
-          <div className={styles.linkbutton__buttonWrap}>
+          <div className={styles.form__buttonWrap}>
             <MainButton
               title={"Send it"}
               type="submit"
               disabled={isSubmitting}
               globalClassName={"linkButton"}
               localClassName={"form__button"}
+              additionalClassName={"form__buttonTextWrap"}
             />
           </div>
         </Form>
