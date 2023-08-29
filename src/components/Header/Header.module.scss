@@ -12,6 +12,10 @@
 .header__wrap {
   display: flex;
   justify-content: space-between;
+  padding: 13px 0;
+  @media screen and (min-width: $tablet) {
+    padding: 15px 0;
+  }
 }
 
 .header__linkLogo {

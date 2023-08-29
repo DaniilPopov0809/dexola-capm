@@ -1,43 +1,48 @@
 @import "../../styles/variables";
 
 .hero {
-  padding-top: 70px;
+  position: relative;
+  padding-top: 67px;
 
   display: grid;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 79px;
+  }
+}
+
+.hero__wrap {
+  display: grid;
+
+  // margin-left: auto;
+  // margin-right: auto;
 
   grid-template-areas:
     "imageList"
     "title"
     "description";
   grid-template-columns: 1fr;
-  // grid-template-rows: auto;
+  grid-template-rows: auto;
 
   @media screen and (min-width: $desktop) {
     grid-template-areas:
       "description imageList"
       "title title";
-     
-    grid-template-columns: 2fr 1fr;
+
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
 }
 
-
-
-
-
-
-
 .hero__list {
   grid-area: imageList;
-  
-  
+
   display: flex;
   position: relative;
 
   @media screen and (min-width: $desktop) {
     width: 466px;
-    
+
     &:before,
     &:after {
       content: "";
@@ -60,8 +65,7 @@
   }
 }
 
-.hero__itemLeft,
-.hero__itemRight {
+.hero__item {
   position: relative;
   flex-basis: 50%;
 
@@ -77,50 +81,75 @@
   }
 }
 
-.hero_image {
+.hero_imageLeft,
+.hero_imageRight {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
-  animation: changeImage 10s linear infinite;
+  object-fit: cover;
+  animation: changeImage 20s linear infinite;
 
-  
   &:nth-child(1) {
     animation-delay: 0s;
   }
 
   &:nth-child(2) {
-    animation-delay: 2s;
-  }
-
-  &:nth-child(3) {
     animation-delay: 4s;
   }
 
+  &:nth-child(3) {
+    animation-delay: 8s;
+  }
+
   &:nth-child(4) {
-    animation-delay: 6s;
+    animation-delay: 12s;
   }
 
   &:nth-child(5) {
-    animation-delay: 8s;
+    animation-delay: 16s;
+  }
+}
+
+.hero_imageRight {
+  &:nth-child(1) {
+    animation-delay: 1s;
+  }
+
+  &:nth-child(2) {
+    animation-delay: 5s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 9s;
+  }
+
+  &:nth-child(4) {
+    animation-delay: 13s;
+  }
+
+  &:nth-child(5) {
+    animation-delay: 17s;
   }
 }
 
 @keyframes changeImage {
-  0%,
+  0% {
+    opacity: 0;
+  }
+  5%,
+  30% {
+    opacity: 1;
+  }
+  35%,
   100% {
     opacity: 0;
   }
-  10%,
-  90% {
-    opacity: 1;
-  }
 }
 
-.hero__itemLeft::before,
-.hero__itemRight::before {
+.hero__item::before {
   content: "";
   display: block;
   padding-top: 191%;
@@ -149,4 +178,3 @@
     // padding: 159px 70px 56px 24px;
   }
 }
-

@@ -64,16 +64,15 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
           <div className={styles.featureCard__descriptionWrap}>
             <p className={styles.featureCard__description}>{description}</p>
           </div>
-          <div className={styles.featureCard__linkWrap}>
             <MainLink
-              link={"#"}
-              title={"discover now"}
-              target={"_blank"}
-              globalClassName={"linkButton"}
-              localClassName={"featureCard__link"}
-              rel={"noopener nofollow noreferrer"}
+              link="#"
+              title="discover now"
+              target="_blank"
+              globalClassName="linkButton"
+              localClassName="featureCard__link"
+              additionalClassName="featureCard__linkTextWrap"
+              rel="noopener nofollow noreferrer"
             />
-          </div>
         </div>
       </div>
     </li>

@@ -1,5 +1,4 @@
 @import "../../../styles/variables";
-// @import 'react-phone-input-2/lib/style.css';
 
 .form {
   display: flex;
@@ -15,100 +14,9 @@
   }
 }
 
-.form__container {
-  position: relative;
+.field__container {
   margin-bottom: 16px;
   height: 68px;
-
-  &::before {
-    content: "*";
-    position: absolute;
-    color: $warrningRoseColor;
-    top: 8px;
-    left: 0;
-    font-size: 16px;
-  }
-}
-
-.form__input {
-  width: 100%;
-  padding: 8px 0 14px 30px;
-  margin-bottom: 4px;
-
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid $whiteColor;
-
-  color: $whiteColor;
-
-  // font-family: $bodyFont;
-  // letter-spacing: -0.28px;
-
-  transition: border-color $animation;
-
-  &::placeholder {
-    color: $lightGreyColor;
-  }
-
-  &:hover,
-  &:focus {
-    border-color: $accentBlueColor;
-    outline: none;
-  }
-
-  // @media screen and (min-width: $tablet) {
-    // font-size: $bodyTabletFontsize;
-    // letter-spacing: -0.32px;
-  // }
-
-  // @media screen and (min-width: $desktop) {
-    // font-size: $bodyDesktopFontsize;
-    // line-height: 1.33;
-    // letter-spacing: 0.36px;
-  // }
-}
-
-.form__toggle {
-  position: absolute;
-  top: 8px;
-  right: 0;
-  width: 24px;
-  height: 24px;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-
-  transition: border-color $animation;
-
-  &:hover {
-    scale: 1.1;
-  }
-}
-
-.form__toggle::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../../../images/eyeClosed.svg");
-  
-}
-
-.form__toggle.open::after {
-  background: url("../../../images/eyeOpened.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.form__error {
-  font-size: 13px;
-  letter-spacing: 0.26px;
-  line-height: 1, 85;
-  color: $warrningRoseColor;
 }
 
 .form__buttonWrap {
@@ -120,10 +28,9 @@
     }
 }
 
-.error {
-  border-color:  $warrningRoseColor;
-}
-
-.success {
-  border-color:  $successGreenColor;
+.field__error {
+  font-size: 13px;
+  letter-spacing: 0.26px;
+  line-height: 1, 85;
+  color: $warrningRoseColor;
 }

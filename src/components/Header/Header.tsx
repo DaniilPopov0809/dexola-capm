@@ -12,8 +12,9 @@ const Header = () => {
         <MainLink
           link="#joinUs"
           title="Join Now"
-          globalClassName={"linkButton"}
+          globalClassName="linkButton"
           localClassName="header__link"
+          additionalClassName="header__linkTextWrap"
         />
       </div>
     </header>

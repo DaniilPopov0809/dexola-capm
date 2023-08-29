@@ -10,16 +10,22 @@
     }
   }
   
-  .form__button::before {
+  .form__buttonTextWrap {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .form__buttonTextWrap::before {
     content: "";
     position: absolute;
     width: 24px;
     height: 1.5px;
     top: 50%;
-    left: 89px;
+    left: -35px;
     background: $whiteColor;
   
     @media screen and (min-width: $tablet) {
-      left: 54px;
+      // left: 54px;
     }
   }
+

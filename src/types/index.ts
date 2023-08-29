@@ -38,3 +38,4 @@ export interface TopNftsProps {
   price: string;
   index?: number;
 }
+
