@@ -3,6 +3,7 @@
 .title__h3,
 .title__h4 {
   font-family: Kanit;
+  font-display: optional;
   color: $whiteColor;
   transition: font-size $animation;
 }

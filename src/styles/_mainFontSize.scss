@@ -1,5 +1,6 @@
 .mainFontSize {
     font-family: $bodyFont;
+    font-display: optional;
     color: $lightGreyColor;
     transition: font-size $animation;
   
