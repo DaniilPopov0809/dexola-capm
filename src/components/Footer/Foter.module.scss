@@ -14,15 +14,13 @@
   text-align: center;
 
   // @media screen and (min-width: $mobile) {
-    grid-template-areas:
-      "designer"
-      "social"
-      "rights";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+  grid-template-areas:
+    "social"
+    "designer"
+    "rights";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   // }
-
-  
 
   @media screen and (min-width: $tablet) {
     grid-template-areas:

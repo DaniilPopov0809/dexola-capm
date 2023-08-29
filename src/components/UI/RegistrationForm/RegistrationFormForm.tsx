@@ -1,12 +1,18 @@
 import { useState } from "react";
-import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
-// import PhoneInput from 'react-phone-input-2';
+import {
+  Formik,
+  Form,
+  Field,
+  ErrorMessage,
+  FormikHelpers,
+  FormikProps,
+} from "formik";
+import PhoneInput from "react-phone-number-input";
 import { InitialValue } from "../../../types";
 import MainButton from "../MainButton/MainButton";
 import validationRegitrationForm from "../../../helpers/validationRegistrationForm";
-
 import styles from "./RegistrationForm.module.scss";
-import "react-phone-input-2/lib/style.css";
+import "./PhoneInput.scss";
 
 interface FieldProps {
   field: {
@@ -19,13 +25,14 @@ interface FieldProps {
     touched: boolean;
     error?: string;
   };
+  form: FormikProps<InitialValue>;
 }
 
 const RegistrationForm = () => {
   const [isOpenEyePass, setIsOpenEyePass] = useState(false);
   const [isOpenEyeConfPass, setIsOpenEyeConfPass] = useState(false);
 
-  const initialValue: InitialValue = {
+  const initialValues: InitialValue = {
     email: "",
     phone: "",
     password: "",
@@ -58,7 +65,7 @@ const RegistrationForm = () => {
 
   return (
     <Formik
-      initialValues={initialValue}
+      initialValues={initialValues}
       validationSchema={validationRegitrationForm}
       onSubmit={handleSubmit}
     >
@@ -91,31 +98,32 @@ const RegistrationForm = () => {
           </Field>
 
           <div className={styles.form__container}>
-            {/* <Field name="phone">
-            {({ field, meta }) => (
-              <PhoneInput
-                {...field}
-                containerStyle={{
-                  width: "100%",
-                  marginBottom: "16px",
-                }}
-                buttonStyle={{
-                  background-color: "transparent",
-                  border: "none",
-                  padding: 0,
-                  height: "40px",
-                }}
-                country={"ua"}
-              />
-            )}
-          </Field> */}
-            <Field
-              className={styles.form__input}
-              type="tel"
-              name="phone"
-              aria-label="Phone"
-              required
-            />
+            <Field name="phone">
+              {({ field, meta, form }: FieldProps) => (
+                <PhoneInput
+                  {...field}
+                  className={`${
+                    meta.touched && meta.error
+                      ? "error"
+                      : meta.touched
+                      ? "success"
+                      : ""
+                  }`}
+                  international
+                  defaultCountry="UA"
+                  countryCallingCodeEditable={false}
+                  placeholder="+38(0__) ___ __ __"
+                  value={field.value}
+                  // maxLength={13}
+                  onChange={(value) => {
+                    form.setFieldValue("phone", value);
+                  }}
+                  onBlur={() => {
+                    form.setFieldTouched("phone", true);
+                  }}
+                />
+              )}
+            </Field>
             <ErrorMessage
               className={styles.form__error}
               name="phone"
