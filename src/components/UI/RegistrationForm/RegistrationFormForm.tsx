@@ -150,6 +150,7 @@ const RegistrationForm = () => {
                 />
                 <button
                   type="button"
+                  aria-label="Show password"
                   className={`mainFontSize ${styles.form__toggle} ${
                     isOpenEyePass ? styles.open : ""
                   }`}
@@ -182,6 +183,7 @@ const RegistrationForm = () => {
                 />
                 <button
                   type="button"
+                  aria-label="Show password"
                   className={`${styles.form__toggle} ${
                     isOpenEyeConfPass ? styles.open : ""
                   }`}

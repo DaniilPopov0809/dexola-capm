@@ -1,41 +1,48 @@
 @import "../../styles/variables";
 
 .hero {
-  padding-top: 41px;
+  position: relative;
+  padding-top: 67px;
 
   display: grid;
+  
+  @media screen and (min-width: $tablet) {
+    padding-top: 79px;
+  }
+}
 
+.hero__wrap {
+  display: grid;
+
+  // margin-left: auto;
+  // margin-right: auto;
+  
   grid-template-areas:
     "imageList"
     "title"
     "description";
   grid-template-columns: 1fr;
-  // grid-template-rows: auto;
-
-  @media screen and (min-width: $tablet) {
-    padding-top: 78px;
-  }
+  grid-template-rows: auto;
 
   @media screen and (min-width: $desktop) {
     grid-template-areas:
       "description imageList"
       "title title";
-     
+
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: auto ;
   }
 }
 
 .hero__list {
   grid-area: imageList;
-  
-  
+
   display: flex;
   position: relative;
 
   @media screen and (min-width: $desktop) {
     width: 466px;
-    
+
     &:before,
     &:after {
       content: "";
@@ -82,38 +89,41 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  animation: changeImage 10s linear infinite;
+  object-fit: cover;
+  animation: changeImage 15s linear infinite;
 
-  
   &:nth-child(1) {
     animation-delay: 0s;
   }
 
   &:nth-child(2) {
-    animation-delay: 2s;
+    animation-delay: 3s;
   }
 
   &:nth-child(3) {
-    animation-delay: 4s;
-  }
-
-  &:nth-child(4) {
     animation-delay: 6s;
   }
 
+  &:nth-child(4) {
+    animation-delay: 9s;
+  }
+
   &:nth-child(5) {
-    animation-delay: 8s;
+    animation-delay: 12s;
   }
 }
 
 @keyframes changeImage {
-  0%,
-  100% {
+  0% {
     opacity: 0;
   }
-  10%,
-  90% {
+  5%,
+  30% {
     opacity: 1;
+  }
+  35%,
+  100% {
+    opacity: 0;
   }
 }
 
@@ -144,7 +154,7 @@
   grid-area: description;
 
   @media screen and (min-width: $desktop) {
+
     // padding: 159px 70px 56px 24px;
   }
 }
-
