@@ -7,7 +7,7 @@ const Hero = () => {
     <section className={styles.hero}>
       <div className={styles.hero__wrap}>
       <ul className={styles.hero__list}>
-        <li className={styles.hero__itemLeft}>
+        <li className={styles.hero__item}>
           {heroMockData[0].map((item) => (
             <img
               key={item.x1}
@@ -18,7 +18,7 @@ const Hero = () => {
               alt="Hero image"
               height={311}
               width={163}
-              className={styles.hero_image}
+              className={styles.hero_imageLeft}
             />
 
         //       <picture>
@@ -49,7 +49,7 @@ const Hero = () => {
         // </picture>
           ))}
         </li>
-        <li className={styles.hero__itemRight}>
+        <li className={styles.hero__item}>
           {heroMockData[1].map((item) => (
             <img
               key={item.x1}
@@ -60,7 +60,7 @@ const Hero = () => {
               alt="Hero image"
               height={311}
               width={163}
-              className={styles.hero_image}
+              className={styles.hero_imageRight}
             />
           //   <picture>
 
