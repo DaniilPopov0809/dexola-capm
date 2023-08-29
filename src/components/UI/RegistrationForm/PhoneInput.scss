@@ -49,6 +49,11 @@
   border-bottom: 1px solid $successGreenColor;
 }
 
+.PhoneInput.error:hover,
+.PhoneInput.error:focus {
+  border-color: $accentBlueColor;
+}
+
 .PhoneInputInput {
   flex: 1;
 
@@ -214,3 +219,4 @@
   opacity: 1;
   color: var(--PhoneInputCountrySelectArrow-color--focus);
 }
+

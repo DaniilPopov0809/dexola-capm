@@ -5,28 +5,16 @@ import {
   Field,
   ErrorMessage,
   FormikHelpers,
-  FormikProps,
+  FieldProps,
 } from "formik";
 import PhoneInput from "react-phone-number-input";
-import { InitialValue } from "../../../types";
 import MainButton from "../MainButton/MainButton";
+import FieldInput from "../FieldInput/FieldInput";
+import ShowPasswordButton from "../ShowPasswordButton/ShowPasswordButton";
+import { InitialValue } from "../../../types";
 import validationRegitrationForm from "../../../helpers/validationRegistrationForm";
 import styles from "./RegistrationForm.module.scss";
 import "./PhoneInput.scss";
-
-interface FieldProps {
-  field: {
-    name: string;
-    value: string;
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-    onBlur: (e: React.FocusEvent<HTMLInputElement>) => void;
-  };
-  meta: {
-    touched: boolean;
-    error?: string;
-  };
-  form: FormikProps<InitialValue>;
-}
 
 const RegistrationForm = () => {
   const [isOpenEyePass, setIsOpenEyePass] = useState(false);
@@ -72,33 +60,21 @@ const RegistrationForm = () => {
       {({ isSubmitting }) => (
         <Form className={styles.form} autoComplete="off">
           <Field name="email">
-            {({ field, meta }: FieldProps) => (
-              <div className={styles.form__container}>
-                <input
-                  className={`mainFontSize ${styles.form__input} ${
-                    meta.touched && meta.error
-                      ? styles.error
-                      : meta.touched
-                      ? styles.success
-                      : ""
-                  }`}
-                  type="email"
-                  aria-label="Email"
-                  required
-                  {...field}
-                  placeholder="Enter email"
-                />
-                <ErrorMessage
-                  className={styles.form__error}
-                  name="email"
-                  component="div"
-                />
-              </div>
+            {({ field, meta, form }: FieldProps) => (
+              <FieldInput
+                field={field}
+                meta={meta}
+                form={form}
+                placeholder="Enter email"
+                type="email"
+                name={"email"}
+                aria-label="Email"
+              />
             )}
           </Field>
 
-          <div className={styles.form__container}>
-            <Field name="phone">
+          <div className={styles.field__container}>
+            <Field name="phone" >
               {({ field, meta, form }: FieldProps) => (
                 <PhoneInput
                   {...field}
@@ -114,88 +90,64 @@ const RegistrationForm = () => {
                   countryCallingCodeEditable={false}
                   placeholder="+38(0__) ___ __ __"
                   value={field.value}
-                  // maxLength={13}
+                  aria-label="Phone"
                   onChange={(value) => {
                     form.setFieldValue("phone", value);
                   }}
                   onBlur={() => {
                     form.setFieldTouched("phone", true);
                   }}
+                  autocomplete="off"
                 />
               )}
             </Field>
             <ErrorMessage
-              className={styles.form__error}
+              className={styles.field__error}
               name="phone"
               component="div"
             />
           </div>
 
-          <Field name="password">
-            {({ field, meta }: FieldProps) => (
-              <div className={styles.form__container}>
-                <input
-                  className={`mainFontSize  ${styles.form__input} ${
-                    meta.touched && meta.error
-                      ? styles.error
-                      : meta.touched
-                      ? styles.success
-                      : ""
-                  }`}
-                  type={isOpenEyePass ? "text" : "password"}
-                  placeholder="Password"
-                  aria-label="Password"
-                  required
-                  {...field}
-                />
-                <button
+          <Field name="password" >
+            {({ field, meta, form }: FieldProps) => (
+              <FieldInput
+                field={field}
+                meta={meta}
+                form={form}
+                placeholder="Password"
+                type={isOpenEyePass ? "text" : "password"}
+                name="password"
+                aria-label="Password"
+                
+              >
+                <ShowPasswordButton
                   type="button"
                   aria-label="Show password"
-                  className={`mainFontSize ${styles.form__toggle} ${
-                    isOpenEyePass ? styles.open : ""
-                  }`}
-                  onClick={() => setIsOpenEyePass(!isOpenEyePass)}
-                ></button>
-                <ErrorMessage
-                  className={styles.form__error}
-                  name="password"
-                  component="div"
+                  isOpen={isOpenEyePass}
+                  setIsOpen={setIsOpenEyePass}
                 />
-              </div>
+              </FieldInput>
             )}
           </Field>
+
           <Field name="confirmPassword">
-            {({ field, meta }: FieldProps) => (
-              <div className={styles.form__container}>
-                <input
-                  className={`mainFontSize ${styles.form__input} ${
-                    meta.touched && meta.error
-                      ? styles.error
-                      : meta.touched
-                      ? styles.success
-                      : ""
-                  }`}
-                  type={isOpenEyeConfPass ? "text" : "password"}
-                  placeholder="Confirm password"
-                  aria-label="Confirm password"
-                  required
-                  {...field}
-                />
-                <button
+            {({ field, meta, form }: FieldProps) => (
+              <FieldInput
+                field={field}
+                meta={meta}
+                form={form}
+                placeholder="Confirm password"
+                type={isOpenEyeConfPass ? "text" : "password"}
+                name="confirmPassword"
+                aria-label="Confirm password"
+              >
+                <ShowPasswordButton
                   type="button"
                   aria-label="Show password"
-                  className={`${styles.form__toggle} ${
-                    isOpenEyeConfPass ? styles.open : ""
-                  }`}
-                  onClick={() => setIsOpenEyeConfPass(!isOpenEyeConfPass)}
-                ></button>
-
-                <ErrorMessage
-                  className={styles.form__error}
-                  name="confirmPassword"
-                  component="div"
+                  isOpen={isOpenEyeConfPass}
+                  setIsOpen={setIsOpenEyeConfPass}
                 />
-              </div>
+              </FieldInput>
             )}
           </Field>
           <div className={styles.form__buttonWrap}>
