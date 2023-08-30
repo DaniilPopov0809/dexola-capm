@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap');
 
 
-@import './_variables';
-@import './_global';
-@import './mainFontSize';
-@import './container';
-@import './titles';
-@import './_mainLinkButton';
+@import './common/variables';
+@import './common/global';
+@import './common/mainFontSize';
+@import './common/container';
+@import './common/titles';
+@import './common/mainLinkButton';
 

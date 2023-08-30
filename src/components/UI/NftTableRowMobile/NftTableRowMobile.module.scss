@@ -1,4 +1,4 @@
-@import "../../../styles/variables";
+@import "../../../styles/common/variables";
 
 .row {
   height: 80px;
@@ -36,12 +36,12 @@
 }
 
 .cell__list {
-    width: 100%;
+  width: 100%;
 }
 
 .cell__listItem {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 // .row__cellAvatar {
 //   width: 64px;

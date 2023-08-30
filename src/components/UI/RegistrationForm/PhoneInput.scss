@@ -1,6 +1,5 @@
+@import "../../../styles/common/variables";
 
-@import "../../../styles/variables";
- 
 /* CSS variables. */
 :root {
   --PhoneInput-color--focus: #204ffe;
@@ -219,4 +218,3 @@
   opacity: 1;
   color: var(--PhoneInputCountrySelectArrow-color--focus);
 }
-

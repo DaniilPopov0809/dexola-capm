@@ -1,31 +1,30 @@
-@import "../../../styles/variables";
+@import "../../../styles/common/variables";
 
 .form__button {
-    padding: 11px 93px 13px 126px;
-  
-    @media screen and (min-width: $tablet) {
-      width: auto;
-      padding-left: 89px;
-      padding-right: 75px;
-    }
-  }
-  
-  .form__buttonTextWrap {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .form__buttonTextWrap::before {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 1.5px;
-    top: 50%;
-    left: -35px;
-    background: $whiteColor;
-  
-    @media screen and (min-width: $tablet) {
-      // left: 54px;
-    }
-  }
+  padding: 11px 93px 13px 126px;
 
+  @media screen and (min-width: $tablet) {
+    width: auto;
+    padding-left: 89px;
+    padding-right: 75px;
+  }
+}
+
+.form__buttonTextWrap {
+  position: relative;
+  display: inline-block;
+}
+
+.form__buttonTextWrap::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 1.5px;
+  top: 50%;
+  left: -35px;
+  background: $whiteColor;
+
+  @media screen and (min-width: $tablet) {
+    // left: 54px;
+  }
+}
