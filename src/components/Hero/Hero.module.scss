@@ -2,10 +2,10 @@
 @import "../../styles/plugins/keyframes";
 
 .hero {
-  position: relative;
+  // position: relative;
   padding-top: 67px;
 
-  display: grid;
+
 
   @media screen and (min-width: $tablet) {
     padding-top: 79px;
@@ -13,10 +13,13 @@
 }
 
 .hero__wrap {
+position: relative;
+//  display: flex;
+//  flex-flow: row wrap;
   display: grid;
 
-  // margin-left: auto;
-  // margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
   grid-template-areas:
     "imageList"
@@ -30,14 +33,13 @@
       "description imageList"
       "title title";
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 744px auto;
     grid-template-rows: auto;
   }
 }
 
 .hero__list {
   grid-area: imageList;
-
   display: flex;
   position: relative;
 
@@ -79,6 +81,7 @@
     border-bottom: none;
     border-top: none;
     height: 311px;
+    
   }
 }
 
@@ -150,20 +153,23 @@
   // }
 }
 
-// .hero__title {
-//   border: none;
-// }
+.hero__title {
+  border: none;
+}
 
 .hero__titleContainer {
+  order: 2;
   grid-area: title;
   width: 100%;
   overflow: hidden;
 }
 
-.hero__description {
-  grid-area: description;
+.hero__descriptionContainer {
+ grid-area: description;
+}
 
+.hero__description {
   @media screen and (min-width: $desktop) {
-    // padding: 159px 70px 56px 24px;
+    padding: 159px 70px 56px 24px;
   }
 }
