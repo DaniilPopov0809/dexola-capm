@@ -4,7 +4,7 @@ import styles from "./FeatureCard.module.scss";
 import { FeatureCardProps } from "../../../types";
 
 const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
-  // const { mobile, tablet, desktop } = imageData;
+  const { mobile, tab_desk} = imageData;
   return (
     <li className={styles.featureCard}>
       <div className={styles.featureCard__content}>
@@ -42,7 +42,7 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
             className={styles.featureCard__img}
           />
         </picture> */}
-        <img
+        {/* <img
             className={styles.featureCard__img}
             srcSet={`${imageData.x1} 1x,
                     ${imageData.x2} 2x,
@@ -51,7 +51,32 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
             alt={`${title.text} image`}
             // width="370"
 
-        />
+        /> */}
+        <picture>
+          <source
+            srcSet={`
+            ${tab_desk.x1} 1x,
+            ${tab_desk.x2} 2x,
+            ${tab_desk.x3} 3x
+          `}
+            media="(min-width: 375px)"
+          />
+
+          <source
+            srcSet={`
+            ${mobile.x1} 1x,
+            ${mobile.x2} 2x,
+            ${mobile.x3} 3x
+          `}
+            media="(min-width: 375px)"
+          />
+
+          <img
+            src={`${mobile.x1}`}
+            alt={`${title.text} image`}
+            className={styles.featureCard__img}
+          />
+        </picture>
         <div className={styles.featureCard__wrap}>
           <Title
             text={title.text}

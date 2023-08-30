@@ -58,7 +58,7 @@ const RegistrationForm = () => {
       onSubmit={handleSubmit}
     >
       {({ isSubmitting }) => (
-        <Form className={styles.form} >
+        <Form className={styles.form}>
           <Field name="email" autoComplete="off">
             {({ field, meta, form }: FieldProps) => (
               <FieldInput
@@ -74,7 +74,7 @@ const RegistrationForm = () => {
           </Field>
 
           <div className={styles.field__container}>
-            <Field name="phone" >
+            <Field name="phone">
               {({ field, meta, form }: FieldProps) => (
                 <PhoneInput
                   {...field}
@@ -85,12 +85,13 @@ const RegistrationForm = () => {
                       ? "success"
                       : ""
                   }`}
+                  limitMaxLength={true}
+                  // defaultCountry="UA"  
                   international
-                  defaultCountry="UA"
-                  countryCallingCodeEditable={false}
                   placeholder="+38(0__) ___ __ __"
                   value={field.value}
                   aria-label="Phone"
+                  withCountryCallingCode={false}
                   onChange={(value) => {
                     form.setFieldValue("phone", value);
                   }}
@@ -108,7 +109,7 @@ const RegistrationForm = () => {
             />
           </div>
 
-          <Field name="password" >
+          <Field name="password">
             {({ field, meta, form }: FieldProps) => (
               <FieldInput
                 field={field}
@@ -118,7 +119,6 @@ const RegistrationForm = () => {
                 type={isOpenEyePass ? "text" : "password"}
                 name="password"
                 aria-label="Password"
-                
               >
                 <ShowPasswordButton
                   type="button"

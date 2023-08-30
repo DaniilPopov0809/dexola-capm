@@ -25,7 +25,12 @@ export interface FeatureCardProps {
   //   tablet: ImageData;
   //   desktop: ImageData;
   // };
-  imageData: ImageData;
+  // imageData: ImageData;
+    imageData: {
+    mobile: ImageData;
+    tab_desk: ImageData;
+    
+  };
 }
 
 export interface TopNftsProps {
