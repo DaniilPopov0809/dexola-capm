@@ -57,7 +57,7 @@ import image02Mob1x from "../images/features/02_mob@1x.webp";
 import image02Mob2x from "../images/features/02_mob@2x.webp";
 import image02Mob3x from "../images/features/02_mob@3x.webp";
 
-import image02TabDesk1x from "../images/features/02_tab-desk@1x .webp";
+import image02TabDesk1x from "../images/features/02_tab-desk@1x.webp";
 import image02TabDesk2x  from "../images/features/02_tab-desk@2x.webp";
 import image02TabDesk3x  from "../images/features/02_tab-desk@3x.webp";
 
