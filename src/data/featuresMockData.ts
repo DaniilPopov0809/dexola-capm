@@ -61,6 +61,14 @@ import image02TabDesk1x from "../images/features/02_tab-desk@1x.webp";
 import image02TabDesk2x  from "../images/features/02_tab-desk@2x.webp";
 import image02TabDesk3x  from "../images/features/02_tab-desk@3x.webp";
 
+import image03Mob1x from "../images/features/03_mob@1x.webp";
+import image03Mob2x from "../images/features/03_mob@2x.webp";
+import image03Mob3x from "../images/features/03_mob@3x.webp";
+
+import image03TabDesk1x from "../images/features/03_tab-desk@1x.webp";
+import image03TabDesk2x  from "../images/features/03_tab-desk@2x.webp";
+import image03TabDesk3x  from "../images/features/03_tab-desk@3x.webp";
+
 const featuresMockData: FeatureCardProps[] = [
   // {
   //     id: "1",
@@ -236,14 +244,14 @@ const featuresMockData: FeatureCardProps[] = [
         "Every StarRunner NFT tells a story – YOUR story. This NFT encapsulates the essence of your journey.",
         imageData: {
           mobile: {
-            x1: image01Mob1x,
-            x2: image01Mob2x,
-            x3: image01Mob3x,
+            x1: image03Mob1x,
+            x2: image03Mob2x,
+            x3: image03Mob3x,
           },
           tab_desk: {
-            x1: image01TabDesk1x,
-            x2: image01TabDesk2x,
-            x3: image01TabDesk3x,
+            x1: image03TabDesk1x,
+            x2: image03TabDesk2x,
+            x3: image03TabDesk3x,
           },
         },
   },
