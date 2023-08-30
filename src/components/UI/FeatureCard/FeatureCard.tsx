@@ -59,13 +59,13 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
             ${tab_desk.x2} 2x,
             ${tab_desk.x3} 3x
           `}
-            media="(min-width: 375px)"
+            media="(min-width: 420px)"
           />
 
           <source
             srcSet={`
             ${mobile.x1} 1x,
-            ${mobile.x2} 2x,
+            ${mobile.x2} 2x,  
             ${mobile.x3} 3x
           `}
             media="(min-width: 375px)"

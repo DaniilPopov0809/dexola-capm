@@ -1,5 +1,5 @@
 import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
+// import Hero from "./components/Hero/Hero";
 import Features from "./components/Features/Features";
 import TopNfts from "./components/TopNfts/TopNfts";
 import JoinUs from "./components/JoinUs/JoinUs";
@@ -10,7 +10,7 @@ function App() {
     <>
       <Header />
       <main className="container">
-        <Hero/>
+        {/* <Hero/> */}
         <Features />
         <TopNfts />
         <JoinUs />
