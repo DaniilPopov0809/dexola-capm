@@ -1,4 +1,4 @@
-@import "../../../styles/variables";
+@import "../../../styles/common/variables";
 
 .featureCard {
   display: flex;
@@ -21,14 +21,14 @@
 .featureCard__content {
   display: flex;
   flex-direction: column;
-  
+
   // height: 100%;
 }
 
 .featureCard__wrap {
   display: flex;
-	flex-direction: column;
-	flex-grow: 1;
+  flex-direction: column;
+  flex-grow: 1;
   padding: 16px 16px 24px 16px;
 
   @media screen and (min-width: $tablet) {
@@ -44,8 +44,6 @@
   object-fit: cover;
   width: 100%;
   min-height: 236px;
-  
-
 
   // @media screen and (min-width: $mobile) {
   //   height: auto;
@@ -75,8 +73,8 @@
 }
 
 // .featureCard__linkWrap {
-  // display: flex;
-  // justify-content: center;
-  // flex-basis: auto;
-  // align-self: flex-end;
+// display: flex;
+// justify-content: center;
+// flex-basis: auto;
+// align-self: flex-end;
 // }

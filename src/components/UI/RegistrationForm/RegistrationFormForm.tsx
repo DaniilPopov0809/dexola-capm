@@ -58,8 +58,8 @@ const RegistrationForm = () => {
       onSubmit={handleSubmit}
     >
       {({ isSubmitting }) => (
-        <Form className={styles.form} autoComplete="off">
-          <Field name="email">
+        <Form className={styles.form} >
+          <Field name="email" autoComplete="off">
             {({ field, meta, form }: FieldProps) => (
               <FieldInput
                 field={field}
@@ -97,7 +97,7 @@ const RegistrationForm = () => {
                   onBlur={() => {
                     form.setFieldTouched("phone", true);
                   }}
-                  autocomplete="off"
+                  autoComplete="off"
                 />
               )}
             </Field>
