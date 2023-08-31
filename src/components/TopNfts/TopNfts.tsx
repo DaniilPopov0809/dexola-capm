@@ -4,7 +4,7 @@ import styles from "./TopNfts.module.scss";
 
 const TopNfts = () => {
   return (
-    <section className={styles.topNfts}>
+    <section className={`container ${styles.topNfts}`}>
       <Title
         text={"Top NFTs"}
         number={"02"}
