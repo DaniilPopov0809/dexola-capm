@@ -5,7 +5,7 @@ import Title from "../UI/Title/Title";
 const Hero = () => {
   return (
     <section className={styles.hero}>
-      <div className={styles.hero__wrap}>
+      <div className={`container ${styles.hero__wrap}`}>
       <ul className={styles.hero__list}>
         <li className={styles.hero__item}>
           {heroMockData[0].map((item) => (

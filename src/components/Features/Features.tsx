@@ -4,7 +4,7 @@ import styles from "./Features.module.scss";
 
 const Features = () => {
   return (
-    <section className={styles.features}>
+    <section className={`container ${styles.features}`}>
       <Title
         text={"Features"}
         number={"02"}
