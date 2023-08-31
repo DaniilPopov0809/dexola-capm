@@ -30,31 +30,19 @@
   display: flex;
   justify-content: space-between;
 
-  padding-bottom: 10px;
   border-bottom: 1px solid $whiteColor;
 
-  @media screen and (min-width: $tablet) {
-    padding-bottom: 16px;
-  }
+  // @media screen and (min-width: $tablet) {
+  //   padding-bottom: 16px;
+  // }
 
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 90px;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   margin-bottom: 90px;
+  // }
 }
 
 .hero {
   border: none;
-}
-
-.joinUs,
-.topNfts {
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 56px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 90px;
-  }
 }
 
 .joinUs {
@@ -63,6 +51,19 @@
 
 .topNfts {
   margin-bottom: 32px;
+}
+
+.joinUs,
+.topNfts {
+  padding-bottom: 10px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 16px;
+    margin-bottom: 56px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 90px;
+  }
 }
 
 .features {

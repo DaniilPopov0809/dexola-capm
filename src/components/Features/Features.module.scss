@@ -1,5 +1,15 @@
 @import "../../styles/common/variables";
 
+.features {
+  padding-top: 21px;
+  padding-bottom: 25px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 126px;
+    padding-bottom: 65px;
+  }
+}
+
 .features__descriptionWrap {
   margin-bottom: 24px;
 

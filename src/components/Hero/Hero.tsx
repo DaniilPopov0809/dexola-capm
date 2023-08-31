@@ -19,6 +19,7 @@ const Hero = () => {
               height={311}
               width={163}
               className={styles.hero_imageLeft}
+              loading="lazy"
             />
 
         //       <picture>
@@ -61,6 +62,7 @@ const Hero = () => {
               height={311}
               width={163}
               className={styles.hero_imageRight}
+              loading="lazy"
             />
           //   <picture>
 

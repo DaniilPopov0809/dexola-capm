@@ -1,8 +1,10 @@
 @import "../../styles/common/variables";
 
 .footer {
-  border-top: 1px solid $accentBlueColor;
   padding-bottom: 52px;
+  
+  border-top: 1px solid $accentBlueColor;
+  
   @media screen and (min-width: $tablet) {
     padding-bottom: 0;
   }
@@ -13,14 +15,12 @@
   align-items: center;
   text-align: center;
 
-  // @media screen and (min-width: $mobile) {
   grid-template-areas:
     "social"
     "designer"
     "rights";
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  // }
 
   @media screen and (min-width: $tablet) {
     grid-template-areas:
@@ -38,8 +38,11 @@
 }
 
 .footer__social {
+  grid-area: social;
+  margin-bottom: 8px;
+
   @media screen and (min-width: $tablet) {
-    grid-area: social;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: $desktop) {
