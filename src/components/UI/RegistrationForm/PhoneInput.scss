@@ -5,11 +5,9 @@
   --PhoneInput-color--focus: #204ffe;
   --PhoneInputInternationalIconPhone-opacity: 0.8;
   --PhoneInputInternationalIconGlobe-opacity: 0.65;
-  --PhoneInputCountrySelect-marginRight: 8px;
+  --PhoneInputCountrySelect-marginRight: 16px;
   --PhoneInputCountrySelectArrow-width: 0.5em;
-  --PhoneInputCountrySelectArrow-marginLeft: var(
-    --PhoneInputCountrySelect-marginRight
-  );
+  --PhoneInputCountrySelectArrow-marginLeft: 8px;
   --PhoneInputCountrySelectArrow-borderWidth: 2px;
   --PhoneInputCountrySelectArrow-opacity: 0.45;
   --PhoneInputCountrySelectArrow-color: currentColor;

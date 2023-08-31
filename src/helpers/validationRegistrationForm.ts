@@ -23,11 +23,11 @@ const validationRegitrationForm: Yup.Schema<InitialValue> = Yup.object({
     .min(8, "Password must be at least 8 characters")
     .matches(
       /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/,
-      "Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character"
+      "Password requires: uppercase, lowercase, digit, special character."
     ),
   confirmPassword: Yup.string()
     .oneOf([Yup.ref("password")], "Passwords must match")
-    .required("Confirm Password is required"),
+    .required("Confirm password is required"),
 });
 
 export default validationRegitrationForm;

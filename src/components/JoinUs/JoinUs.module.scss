@@ -1,14 +1,16 @@
 @import "../../styles/common/variables";
 
 .joinUs {
-  padding-bottom: 65px;
+  padding-top: 65px;
+  padding-bottom: 69px;
 
   @media screen and (min-width: $tablet) {
     padding-bottom: 76px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-bottom: 113px;
+    padding-top: 126px;
+    padding-bottom: 125px;
   }
 }
 
@@ -62,8 +64,7 @@
 }
 
 .joinUs__description {
-  line-height: normal;
-  letter-spacing: -0.28px;
+  line-height: normal;    
   width: 100%;
 
   @media screen and (min-width: $tablet) {

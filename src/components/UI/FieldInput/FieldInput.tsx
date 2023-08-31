@@ -32,7 +32,6 @@ const FieldInput = ({
         }`}
         type={type}
         placeholder={placeholder}
-        autoComplete="off"
         {...field}
         {...inputProps}
       />

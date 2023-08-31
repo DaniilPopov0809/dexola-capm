@@ -1,9 +1,10 @@
 import Title from "../UI/Title/Title";
 import NftTable from "../UI/NftTable/NftTable";
+import styles from "./TopNfts.module.scss";
 
 const TopNfts = () => {
   return (
-    <section>
+    <section className={styles.topNfts}>
       <Title
         text={"Top NFTs"}
         number={"02"}

@@ -75,6 +75,9 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
             src={`${mobile.x1}`}
             alt={`${title.text} image`}
             className={styles.featureCard__img}
+            loading="lazy"
+            width="100%"
+            height="auto"
           />
         </picture>
         <div className={styles.featureCard__wrap}>
