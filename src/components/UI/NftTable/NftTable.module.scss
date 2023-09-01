@@ -6,16 +6,29 @@
   color: $whiteColor;
   border: none;
 
-  @media screen and (min-width: $tablet) {
-    text-align: start;
-  }
+  // @media screen and (min-width: $tablet) {
+  //   text-align: start;
+  // }
 }
 
 .table__head {
   text-align: left;
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+
   @media screen and (min-width: $tablet) and (max-width: $tabletEnd) {
     vertical-align: top;
   }
+}
+
+.table__headRow {
+  display: grid;
+
+  grid-template-columns: 64px 1fr 16.7% 13% 13.4% 13.2%;
+  grid-template-rows: auto;
 }
 
 .table__headCell {

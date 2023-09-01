@@ -8,7 +8,8 @@ const NftTableRow = ({
   games,
   win,
   price,
-}: TopNftsProps, ) => {
+  index,
+}: TopNftsProps) => {
   return (
     <tr className={styles.row}>
       <td headers="avatar" className={`${styles.row__cellAvatar}`}>
@@ -23,11 +24,39 @@ const NftTableRow = ({
           height="64"
         />
       </td>
-      <td headers="name" className={`${styles.row__cell} ${styles.row__cellName}`}>{name}</td>
-      <td headers="level" className={`${styles.row__cell} ${styles.row__cellLevel}`}>{level}</td>
-      <td headers="games" className={`${styles.row__cell} ${styles.row__cellGames}`}>{games}</td>
-      <td headers="win" className={`${styles.row__cell} ${styles.row__cellWin}`}>{win}</td>
-      <td headers="price" className={`${styles.row__cell} ${styles.row__cellPrice}`}>{price}</td>
+      <td
+        headers="name"
+        className={`${styles.row__cell} ${styles.row__cellName}`}
+      >
+        <span className={styles.row__number}>{`${index+1}.`}</span><span>{name}</span>
+      </td>
+      <td
+        headers="level"
+        className={`${styles.row__cell} ${styles.row__cellLevel}`}
+      >
+        <span className={styles.row__cellLabel}>Rarity:</span>{" "}
+        <span>{level}</span>
+      </td>
+      <td
+        headers="games"
+        className={`${styles.row__cell} ${styles.row__cellGames}`}
+      >
+        <span className={styles.row__cellLabel}>Total games:</span>
+        <span>{games}</span>
+      </td>
+      <td
+        headers="win"
+        className={`${styles.row__cell} ${styles.row__cellWin}`}
+      >
+        <span className={styles.row__cellLabel}>Games Won:</span>
+        <span>{win}</span>
+      </td>
+      <td
+        headers="price"
+        className={`${styles.row__cell} ${styles.row__cellPrice}`}
+      >
+        {price}
+      </td>
     </tr>
   );
 };

@@ -41,6 +41,6 @@ export interface TopNftsProps {
   games: string;
   win: string;
   price: string;
-  index?: number;
+  index: number;
 }
 

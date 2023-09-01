@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <Header />
-      <main >
-        <Hero/>
+      <main>
+        <Hero />
         <Features />
         <TopNfts />
         <JoinUs />
