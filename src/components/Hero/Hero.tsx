@@ -21,14 +21,14 @@ const Hero = () => {
               className={styles.hero_imageLeft}
               loading="lazy"
             />
-
-        //       <picture>
+            
+        //       <picture key={mobile.x1}>
 
         //   <source
         //     srcSet={`
-        //     ${tablet.x1} 1x,
-        //     ${tablet.x2} 2x,
-        //     ${tablet.x3} 3x
+        //     ${tab_desk.x1} 1x,
+        //     ${tab_desk.x2} 2x,
+        //     ${tab_desk.x3} 3x
         //   `}
         //     media="(min-width: 744px)"
         //   />
@@ -45,9 +45,10 @@ const Hero = () => {
         //   <img
         //     src={`${mobile.x1}`}
         //     alt="Hero image"
-        //     className={styles.hero_image}
+        //     className={styles.hero_imageLeft}
         //   />
         // </picture>
+       
           ))}
         </li>
         <li className={styles.hero__item}>
@@ -61,21 +62,22 @@ const Hero = () => {
               alt="Hero image"
               height={311}
               width={163}
-              className={styles.hero_imageRight}
+              className={styles.hero_imageRight} 
               loading="lazy"
             />
-          //   <picture>
+            
+          //   <picture key={mobile.x1}>
 
           //   <source
           //     srcSet={`
-          //     ${tablet.x1} 1x,
-          //     ${tablet.x2} 2x,
-          //     ${tablet.x3} 3x
+          //     ${tab_desk.x1} 1x,
+          //     ${tab_desk.x2} 2x,
+          //     ${tab_desk.x3} 3x
           //   `}
           //     media="(min-width: 744px)"
           //   />
   
-          //   <source
+          //   <source 
           //     srcSet={`
           //     ${mobile.x1} 1x,
           //     ${mobile.x2} 2x,
@@ -87,7 +89,9 @@ const Hero = () => {
           //   <img
           //     src={`${mobile.x1}`}
           //     alt="Hero image"
-          //     className={styles.hero_image}
+          //     className={styles.hero_imageRight}
+          //     width={163} 
+          //         height={311} 
           //   />
           // </picture>
           ))}

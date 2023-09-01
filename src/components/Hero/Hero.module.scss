@@ -2,7 +2,7 @@
 @import "../../styles/plugins/keyframes";
 
 .hero {
-  position: relative; 
+  position: relative;
   padding-top: 67px;
 
   @media screen and (min-width: $tablet) {
@@ -10,40 +10,37 @@
   }
 
   @media screen and (min-width: $desktop) {
-  &:before,
-  &:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: $accentBlueColor;
-    z-index: 2;
-  }
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: $accentBlueColor;
+      z-index: 2;
+    }
 
-  &:before {
-    top: 79px;
-    left: 0;
-  }
+    &:before {
+      top: 79px;
+      left: 0;
+    }
 
-  &:after {
-    top: 390px;
-    left: 0;
+    &:after {
+      top: 390px;
+      left: 0;
+    }
   }
 }
-}
-
 
 .hero__wrap {
-// position: relative;
+  // position: relative;  
 
-@media screen and (min-width: $desktop) {
-//  display: flex;
-//  flex-wrap: wrap;
-}
+  @media screen and (min-width: $desktop) {
+    //  display: flex;
+    //  flex-wrap: wrap;
+  }
 
   display: grid;
-
-
 
   grid-template-areas:
     "imageList"
@@ -64,15 +61,12 @@
 
 .hero__list {
   grid-area: imageList;
-  
+
   display: flex;
-  
 
   @media screen and (min-width: $desktop) {
     // order: 2;
     // flex-basis: 38.83%;
-
-    
   }
 }
 
@@ -89,7 +83,6 @@
     border-bottom: none;
     border-top: none;
     height: 311px;
-    
   }
 }
 
@@ -102,8 +95,11 @@
   height: 100%;
   opacity: 0;
   object-fit: cover;
+  object-position: top;
   animation: changeImage 20s linear infinite;
+}
 
+.hero_imageLeft {
   &:nth-child(1) {
     animation-delay: 0s;
   }
@@ -147,8 +143,6 @@
   }
 }
 
-
-
 .hero__item::before {
   content: "";
   display: block;
@@ -171,13 +165,12 @@
   width: 100%;
   overflow: hidden;
   @media screen and (min-width: $desktop) {
-    padding-top: 426px;
-    }
+    // padding-top: 420px;
+  }
 }
 
 .hero__descriptionContainer {
- grid-area: description;
-
+  grid-area: description;
 }
 
 .hero__description {
