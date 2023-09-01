@@ -27,8 +27,15 @@
 .table__headRow {
   display: grid;
 
+  @media screen and (min-width: $tablet) {
   grid-template-columns: 64px 1fr 16.7% 13% 13.4% 13.2%;
   grid-template-rows: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: 64px 1fr 15% 14.5% 14.2% 13.6%;
+    grid-template-rows: auto;
+  }
 }
 
 .table__headCell {

@@ -22,7 +22,7 @@ const NftTable = () => {
           <th id="games" scope="col" className={styles.table__headCell}>
             Total games
           </th>
-          <th id="won" scope="col" className={styles.table__headCell}>
+          <th id="win" scope="col" className={styles.table__headCell}>
             Games Won
           </th>
           <th id="price" scope="col" className={styles.table__headCell}>
