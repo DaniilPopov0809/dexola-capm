@@ -8,7 +8,7 @@ const NftTableRow = ({
   games,
   win,
   price,
-  index,
+  index=0,
 }: TopNftsProps) => {
   return (
     <tr className={styles.row}>
