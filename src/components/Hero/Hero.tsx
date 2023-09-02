@@ -41,6 +41,8 @@ const Hero = () => {
                   <img
                     src={`${mobile.x1}`}
                     alt="Hero image"
+                    aria-hidden="true"
+                    loading="lazy"
                     className={styles.hero_image}
                     width={163}
                     height={311}
@@ -83,6 +85,8 @@ const Hero = () => {
                 <img
                   src={`${mobile.x1}`}
                   alt="Hero image"
+                  aria-hidden="true"
+                  loading="lazy"
                   className={styles.hero_image}
                   width={163}
                   height={311}
