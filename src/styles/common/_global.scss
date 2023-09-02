@@ -1,5 +1,21 @@
 html {
-  scroll-behavior: smooth;
+  @include custom-scrollbar;
+  // scroll-behavior: smooth;
+  // &::-webkit-scrollbar {
+  //   width: 8px;
+  // }
+
+  // &::-webkit-scrollbar-thumb {
+  //   background-color: $accentBlueColor;
+  //   border-radius: 4px;
+  // }
+
+  // &::-webkit-scrollbar-track {
+  //   background-color: $backgroundColor;
+  // }
+
+  // scrollbar-color: $accentBlueColor $backgroundColor;
+  // scrollbar-width: thin;
 }
 
 body {

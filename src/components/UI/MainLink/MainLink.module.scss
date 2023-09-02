@@ -1,21 +1,12 @@
 @import "../../../styles/common/variables";
 
-.header__link {
-  display: inline-block;
+a.header__link {
+ 
   padding: 10px 24px 10px 40px;
-
-  font-size: $bodyMobileFontsize;
   line-height: normal;
-  // letter-spacing: 0.28px;
-
-  // letter-spacing: 0.6px;
 
   @media screen and (min-width: $tablet) {
     padding: 12px 66px 12px 89px;
-
-    font-size: $bodyTabletFontsize;
-    text-transform: none;
-    line-height: 1.5;
   }
 }
 

@@ -3,10 +3,11 @@
   
     color: $whiteColor;
     font-family: $bodyFont;
-    font-size: $bodyTabletFontsize;
     font-weight: $mediumWeight;
-    line-height: 1.5;
-    letter-spacing: 0.02rem;
+    font-size: $bodyMobileFontsize;
+    line-height: 1.71;
+    letter-spacing: 0.0175rem;
+   
   
     text-transform: uppercase;
   
@@ -19,5 +20,11 @@
   
     &:hover {
       background-color: $buttonHoverColor;
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: $bodyTabletFontsize;
+      line-height: 1.5;
+      letter-spacing: 0.02rem;
     }
   }

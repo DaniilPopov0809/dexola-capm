@@ -1,7 +1,32 @@
 @import "../../../styles/common/variables";
 
 .row {
-  height: 80px;
+  display: grid;
+
+  padding: 16px 24px;
+
+  grid-template-areas:
+    "name name price"
+    "avatar level level"
+    "avatar games games"
+    "avatar win win";
+  grid-template-columns: 80px 1fr 1fr;
+  grid-template-rows: auto;
+
+  @media screen and (min-width: $tablet) {
+    padding: 8px 0;
+
+    grid-template-areas: "avatar name level games win price";
+
+    grid-template-columns: 64px 1fr 16.7% 13% 13.4% 13.2%;
+    grid-template-rows: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: 64px 1fr 15% 14.5% 14.2% 13.6%;
+    grid-template-rows: auto;
+  }
+
   &:nth-child(odd) {
     background-color: $accentRowColor;
     border-bottom: 1px solid $accentBlueColor;
@@ -9,74 +34,121 @@
   }
 }
 
+.row__number {
+  margin-right: 6px;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
 .row__cell {
+  display: flex;
+  justify-content: space-between;
   @media screen and (min-width: $tablet) {
     padding: 11px 16px;
+    align-items: center;
   }
 
   @media screen and (min-width: $desktop) {
     padding: 11px 24px;
+  }
+}
+
+.row__cellLabel {
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
 }
 
 .row__img {
   min-width: 64px;
   min-height: 64px;
-  padding: 8px 0;
   border-radius: 50%;
 }
 
 .row__cellAvatar {
-  width: 64px;
+  grid-area: avatar;
+  // width: 64px;
+}
+
+.row__cellName,
+.row__cellPrice {
+  @media screen and (min-width: $mobile) and (max-width: $mobileEnd) {
+    font-family: $titleSubtitleFont;
+    font-size: 1rem;
+    font-weight: $mediumWeight;
+    line-height: 1.4;
+  }
 }
 
 .row__cellName {
-  @media screen and (min-width: $tablet) {
-    width: 34.5%;
+  grid-area: name;
+  justify-content: start;
+
+  @media screen and (min-width: $mobile) and (max-width: $mobileEnd) {
+    margin-bottom: 16px;
   }
 
-  @media screen and (min-width: $desktop) {
-    width: 37.4%;
+  // @media screen and (min-width: $desktop) {
+  //   width: 37.4%;
+  // }
+}
+
+.row__cellLevel,
+.row__cellGames,
+.row__cellWin {
+  @media screen and (min-width: $mobile) and (max-width: $mobileEnd) {
+    color: $lightGreyColor;
   }
 }
 
 .row__cellLevel {
-  @media screen and (min-width: $tablet) {
-    width: 16.7%;
-    padding: 11px 16px;
-  }
+  grid-area: level;
+  // @media screen and (min-width: $tablet) {
+  //   width: 16.7%;
+  //   padding: 11px 16px;
+  // }
 
-  @media screen and (min-width: $desktop) {
-    width: 15%;
-    padding: 11px 24px;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   width: 15%;
+  //   padding: 11px 24px;
+  // }
 }
 
 .row__cellGames {
-  @media screen and (min-width: $tablet) {
-    width: 13%;
-  }
+  grid-area: games;
+  // @media screen and (min-width: $tablet) {
+  //   width: 13%;
+  // }
 
-  @media screen and (min-width: $desktop) {
-    width: 14.5%;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   width: 14.5%;
+  // }
 }
 .row__cellWin {
-  @media screen and (min-width: $tablet) {
-    width: 13.4%;
-  }
+  grid-area: win;
+  // @media screen and (min-width: $tablet) {
+  //   width: 13.4%;
+  // }
 
-  @media screen and (min-width: $desktop) {
-    width: 14.2%;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   width: 14.2%;
+  // }
 }
 
 .row__cellPrice {
-  @media screen and (min-width: $tablet) {
-    width: 13.2%;
+  grid-area: price;
+  @media screen and (min-width: $mobile) and (max-width: $mobileEnd) {
+    display: flex;
+    align-items: center;
+    justify-content: end;
   }
 
-  @media screen and (min-width: $desktop) {
-    width: 13.6%;
-  }
+  // @media screen and (min-width: $tablet) {
+  //   width: 13.2%;
+  // }
+
+  // @media screen and (min-width: $desktop) {
+  //   width: 13.6%;
+  // }
 }
