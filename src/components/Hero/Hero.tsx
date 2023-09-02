@@ -16,10 +16,7 @@ const Hero = () => {
             ${item.x3} 3x`}
               src={item.x1}
               alt="Hero image"
-              height={311}
-              width={163}
               className={styles.hero_imageLeft}
-              loading="lazy"
             />
             
         //       <picture key={mobile.x1}>
@@ -60,10 +57,7 @@ const Hero = () => {
             ${item.x3} 3x`}
               src={item.x1}
               alt="Hero image"
-              height={311}
-              width={163}
               className={styles.hero_imageRight} 
-              loading="lazy"
             />
             
           //   <picture key={mobile.x1}>
