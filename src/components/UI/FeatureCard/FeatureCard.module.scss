@@ -43,7 +43,8 @@
 .featureCard__img {
   object-fit: cover;
   width: 100%;
-  min-height: 236px;
+  height: 100%;
+  min-height: 232px;
 
   // @media screen and (min-width: $mobile) {
   //   height: auto;

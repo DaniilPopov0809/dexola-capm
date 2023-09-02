@@ -76,8 +76,8 @@ const FeatureCard = ({ title, description, imageData }: FeatureCardProps) => {
             alt={`${title.text} image`}
             className={styles.featureCard__img}
             loading="lazy"
-            width="100%"
-            height="auto"
+            width='100%'
+            height="232"
           />
         </picture>
         <div className={styles.featureCard__wrap}>
