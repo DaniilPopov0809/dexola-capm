@@ -7,6 +7,7 @@ import {
   FormikHelpers,
   FieldProps,
 } from "formik";
+import { toast } from "react-toastify";
 import PhoneInput from "react-phone-number-input";
 import MainButton from "../MainButton/MainButton";
 import FieldInput from "../FieldInput/FieldInput";
@@ -14,7 +15,7 @@ import ShowPasswordButton from "../ShowPasswordButton/ShowPasswordButton";
 import { InitialValue } from "../../../types";
 import validationRegitrationForm from "../../../helpers/validationRegistrationForm";
 import styles from "./RegistrationForm.module.scss";
-import "./PhoneInput.scss";
+import "../../../styles/plugins/_phoneInput..scss";
 
 const RegistrationForm = () => {
   const [isOpenEyePass, setIsOpenEyePass] = useState(false);
@@ -42,7 +43,7 @@ const RegistrationForm = () => {
     //test async operation
     await new Promise<void>((resolve) => {
       setTimeout(() => {
-        console.log(sendData);
+        toast.success(`Data sent successfully: ${JSON.stringify(sendData)}`);
         resolve();
       }, 2000);
     });

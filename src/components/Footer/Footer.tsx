@@ -6,14 +6,12 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={`container ${styles.footer__wrap}`}>
         <div className={styles.footer__social}>
-        <SocialNetwork/>
+          <SocialNetwork />
         </div>
         <div className={styles.footer__designer}>
-          <p>
-            Designed by Dexola - {new Date().getFullYear()}
-          </p>
-          </div>
-          <div className={styles.footer__rights}>
+          <p>Designed by Dexola - {new Date().getFullYear()}</p>
+        </div>
+        <div className={styles.footer__rights}>
           <p>© All rights reserved</p>
         </div>
       </div>

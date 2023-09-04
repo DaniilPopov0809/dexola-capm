@@ -1,0 +1,48 @@
+@import "../../../styles/common/variables";
+@import "../../../styles/plugins/keyframes";
+
+.button {
+  position: absolute;
+  bottom: 50px;
+  right: 140px;
+  opacity: 0;
+  border: 2px solid $whiteColor;
+  border-radius: 50%;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  animation: showContent 2s 3s ease-in-out forwards;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.button__arrow {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-bottom: 2px solid $whiteColor;
+  border-right: 2px solid $whiteColor;
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0;
+}
+
+.arrowOne {
+  top: 30%;
+  left: 50%;
+  animation: arrowAnimation1 1.5s 3.7s ease-in-out infinite;
+}
+
+.arrowTwo {
+  top: 45%;
+  left: 50%;
+  animation: commonArrowAnimation 1.5s 3.9s ease-in-out infinite;
+}
+
+.arrowThree {
+  top: 60%;
+  left: 50%;
+  animation: commonArrowAnimation 1.5s 4.1s ease-in-out infinite;
+}

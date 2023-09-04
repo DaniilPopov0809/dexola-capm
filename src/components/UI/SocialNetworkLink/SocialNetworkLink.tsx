@@ -4,10 +4,15 @@ interface SocialNetworkLinkProps {
   width: number;
   height: number;
   path: string;
-  label:  string;
+  label: string;
 }
 
-const SocialNetworkLink = ({width, height, path, label}: SocialNetworkLinkProps) => {
+const SocialNetworkLink = ({
+  width,
+  height,
+  path,
+  label,
+}: SocialNetworkLinkProps) => {
   return (
     <li className={styles.social__item}>
       <a

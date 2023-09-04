@@ -1,44 +1,11 @@
 @import "../../../styles/common/variables";
 @import "../../../styles/plugins/keyframes";
 
-// .title {
-//   display: flex;
-//   justify-content: space-between;
-
-//   padding-bottom: 10px;
-//   border-bottom: 1px solid $whiteColor;
-
-//   font-family: Kanit;
-//   font-size: $titleMobileFontsize;
-//   font-weight: $normalWeight;
-//   color: $whiteColor;
-
-//   @media screen and (min-width: $tablet) {
-//     padding-bottom: 16px;
-
-//     font-size: $titleTabletFontsize;
-//     line-height: 1.25;
-//   }
-
-//   @media screen and (min-width: $desktop) {
-//     font-size: $titleDesktopFontsize;
-//     line-height: 1;
-//   }
-// }
-
 .title {
   display: flex;
   justify-content: space-between;
 
   border-bottom: 1px solid $whiteColor;
-
-  // @media screen and (min-width: $tablet) {
-  //   padding-bottom: 16px;
-  // }
-
-  // @media screen and (min-width: $desktop) {
-  //   margin-bottom: 90px;
-  // }
 }
 
 .hero {
@@ -120,12 +87,4 @@
   white-space: nowrap;
   animation: heroText 10s linear infinite normal;
   border: none;
-
-  // @media screen and (min-width: $desktop) {
-  // position: absolute;
-  //   bottom: 0;
-  //   left: 0;
-  // }
 }
-
-

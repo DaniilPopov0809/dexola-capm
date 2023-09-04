@@ -12,12 +12,12 @@ interface TitleProps {
 }
 
 const Title = ({
-  text,
-  number = "",
-  titleTag,
-  globalClassName,
-  localClassName,
-  additionalClassName = "",
+  text,                            //text title
+  number = "",                    //text for number if than need
+  titleTag,                      //level title h1,h2....
+  globalClassName,              //the global class is styles/common
+  localClassName,              //class is Title.module.scss
+  additionalClassName = "",   //class is Title.module.scss
 }: TitleProps) => {
   const TagName = titleTag;
 

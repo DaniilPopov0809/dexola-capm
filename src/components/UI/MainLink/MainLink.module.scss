@@ -1,7 +1,6 @@
 @import "../../../styles/common/variables";
 
 a.header__link {
- 
   padding: 10px 24px 10px 40px;
   line-height: normal;
 
@@ -24,20 +23,12 @@ a.header__link {
   width: 16px;
   height: 16px;
   background-image: url("../../../images/arrow.svg");
-
-  // @media screen and (min-width: $tablet) {
-  //   width: 16px;
-  //   height: 16px;
-  //   left: 66px;
-  // }
 }
 
 .featureCard__link {
   padding: 12px 78px 12px 100px;
-  // padding-top: 12px;
-  // padding-bottom: 12px;
+
   text-align: center;
-  // position: relative;
 
   @media screen and (min-width: $tablet) {
     padding: 12px 29px 12px 46px;
@@ -65,11 +56,9 @@ a.header__link {
 
   @media screen and (min-width: $tablet) {
     width: 10px;
-    // left: 29px;
   }
 
   @media screen and (min-width: $desktop) {
     width: 16px;
-    // left: 83px;
   }
 }

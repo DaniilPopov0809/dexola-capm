@@ -1,11 +1,11 @@
 @import "../../styles/common/variables";
 
 .topNfts {
-    padding-bottom: 25px;
-    padding-top: 65px;
-    
-    @media screen and (min-width: $desktop) {
-        padding-top: 126px;
-        padding-bottom: 65px;
-      }
+  padding-bottom: 25px;
+  padding-top: 65px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 126px;
+    padding-bottom: 65px;
+  }
 }
