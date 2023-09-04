@@ -1,9 +1,11 @@
 @import "../../styles/common/variables";
+@import "../../styles/plugins/keyframes";
 
 .animation {
   @media screen and (min-width: $mobile) and (max-width: $tabletEnd) {
     display: none;
   }
+
   overflow: hidden;
   height: 740px;
 }
@@ -11,6 +13,7 @@
 .animation__wrap {
   position: relative;
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -34,11 +37,12 @@
 
 .animantion__wrapTitle {
   padding: 235px 100px;
-  z-index: 19;
-  opacity: 0;
-  animation: showContent 3s 0.5s ease-in forwards;
+  
   border-radius: 50%;
   border: 4px solid $accentBlueColor;
+  animation: showContent 3s 0.5s ease-in forwards;
+  opacity: 0;
+  z-index: 19;
 }
 
 .animation__title,
@@ -102,34 +106,6 @@
   animation: moveCircleSix 4s 1s ease-in;
 }
 
-@keyframes commonMoveCircle {
-  0% {
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(40);
-    opacity: 1;
-  }
-}
-
-@keyframes moveCircleSix {
-  0% {
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(40);
-    opacity: 1;
-  }
-}
-
-@keyframes showContent {
-  to {
-    opacity: 1;
-  }
-}
-
 .animation__backgroundGradient::before {
   content: "";
   position: absolute;
@@ -157,24 +133,5 @@
   transform: translateY(-50%) translateX(-20%);
   filter: blur(70px);
   background: rgba($color: $accentBlueColor, $alpha: 0.5);
-  animation: backgroundShine 10s 6.5s linear infinite;
-}
-
-@keyframes backgroundShine {
-  20% {
-    opacity: 1;
-    transform: translateY(-40%) translateX(-20%);
-  }
-  40% {
-    opacity: 0;
-    transform: translateY(-60%) translateX(-55%);
-  }
-  80% {
-    transform: translateY(-80%) translateX(-75%);
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-50%) translateX(-20%);
-  }
+  animation: backgroundShine 10s 6.5s ease-in infinite;
 }

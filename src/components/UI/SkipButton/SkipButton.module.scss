@@ -1,4 +1,5 @@
 @import "../../../styles/common/variables";
+@import "../../../styles/plugins/keyframes";
 
 .button {
   position: absolute;
@@ -44,31 +45,4 @@ button:disabled {
   top: 60%;
   left: 50%;
   animation: commonArrowAnimation 1.5s 4.1s ease-in-out infinite;
-}
-
-@keyframes arrowAnimation1 {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.3;
-  }
-}
-
-@keyframes commonArrowAnimation {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes showContent {
-  to {
-    opacity: 1;
-  }
 }
