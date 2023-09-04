@@ -20,6 +20,7 @@ const NftTableRow = ({
                     ${avatar.x3} 3x`}
           src={avatar.x1}
           alt={`Avatar ${name}`}
+          loading="lazy"
           width="64"
           height="64"
         />
