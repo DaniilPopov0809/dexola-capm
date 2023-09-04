@@ -13,6 +13,11 @@
   height: 100px;
   cursor: pointer;
   animation: showContent 2s 3s ease-in-out forwards;
+  transition: transform $animation;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 button:disabled {

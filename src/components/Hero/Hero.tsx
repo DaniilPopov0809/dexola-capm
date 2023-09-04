@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet';
 import styles from "./Hero.module.scss";
 import heroMockData from "../../data/heroMockData";
 import Title from "../UI/Title/Title";
@@ -92,12 +91,6 @@ const Hero = () => {
             the adrenaline-charged galactic P2E odyssey of 'StarRunner.'
           </p>
         </div>
-        <Helmet>
-          <link rel="preload" as="image" href={heroMockData[0][0].mobile.x1} />
-          <link rel="preload" as="image" href={heroMockData[0][0].mobile.x2} />
-          <link rel="preload" as="image" href={heroMockData[1][0].mobile.x1} />
-          <link rel="preload" as="image" href={heroMockData[1][0].mobile.x2} />
-        </Helmet>
       </div>
     </section>
   );
