@@ -35,19 +35,19 @@ button:disabled {
 }
 
 .arrowOne {
-  top: 30%;
+  top: 35%;
   left: 50%;
-  animation: arrowAnimation1 1.5s 3.7s ease-in-out infinite;
+  animation: arrowAnimation1 2s 3.7s ease-in-out infinite;
 }
 
 .arrowTwo {
   top: 45%;
   left: 50%;
-  animation: commonArrowAnimation 1.5s 3.9s ease-in-out infinite;
+  animation: commonArrowAnimation 2s 3.9s ease-in-out infinite;
 }
 
 .arrowThree {
-  top: 60%;
+  top: 55%;
   left: 50%;
-  animation: commonArrowAnimation 1.5s 4.1s ease-in-out infinite;
+  animation: commonArrowAnimation 2s 4.1s ease-in-out infinite;
 }
