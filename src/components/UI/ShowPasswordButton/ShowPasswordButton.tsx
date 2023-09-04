@@ -7,7 +7,11 @@ interface ShowPasswordButtonProps
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const ShowPasswordButton = ({ isOpen, setIsOpen, ...props }: ShowPasswordButtonProps) => {
+const ShowPasswordButton = ({
+  isOpen,
+  setIsOpen,
+  ...props
+}: ShowPasswordButtonProps) => {
   return (
     <button
       className={`mainFontSize ${styles.form__toggle} ${

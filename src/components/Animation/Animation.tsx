@@ -8,7 +8,6 @@ const Animation = () => {
     threshold: 0.5,
   });
 
-
   return (
     <section ref={ref} className={styles.animation}>
       {inView && (

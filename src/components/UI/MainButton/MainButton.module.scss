@@ -4,7 +4,6 @@
   padding: 11px 93px 13px 126px;
 
   @media screen and (min-width: $tablet) {
-    // width: auto;
     padding-left: 89px;
     padding-right: 76px;
   }
@@ -23,8 +22,4 @@
   top: 50%;
   left: -35px;
   background: $whiteColor;
-
-  @media screen and (min-width: $tablet) {
-    // left: 54px;
-  }
 }

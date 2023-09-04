@@ -33,13 +33,6 @@
 }
 
 .hero__wrap {
-  // position: relative;
-
-  @media screen and (min-width: $desktop) {
-    //  display: flex;
-    //  flex-wrap: wrap;
-  }
-
   display: grid;
 
   grid-template-areas:
@@ -63,11 +56,6 @@
   grid-area: imageList;
 
   display: flex;
-
-  @media screen and (min-width: $desktop) {
-    // order: 2;
-    // flex-basis: 38.83%;
-  }
 }
 
 .hero__item {
@@ -153,12 +141,10 @@
   content: "";
   display: block;
   padding-top: 191%;
+
   @media screen and (min-width: $tablet) {
     padding-top: 87%;
   }
-  // @media screen and (min-width: $desktop) {
-  //   padding-top: 73%;
-  // }
 }
 
 .hero__title {
@@ -166,13 +152,9 @@
 }
 
 .hero__titleContainer {
-  // position: relative;
   grid-area: title;
   width: 100%;
   overflow: hidden;
-  @media screen and (min-width: $desktop) {
-    // padding-top: 420px;
-  }
 }
 
 .hero__descriptionContainer {

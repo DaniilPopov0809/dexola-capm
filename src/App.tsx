@@ -12,7 +12,7 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Animation/>
+        <Animation />
         <Features />
         <TopNfts />
         <JoinUs />

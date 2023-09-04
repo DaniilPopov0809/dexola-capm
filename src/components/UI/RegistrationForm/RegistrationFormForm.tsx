@@ -15,7 +15,7 @@ import ShowPasswordButton from "../ShowPasswordButton/ShowPasswordButton";
 import { InitialValue } from "../../../types";
 import validationRegitrationForm from "../../../helpers/validationRegistrationForm";
 import styles from "./RegistrationForm.module.scss";
-import "./PhoneInput.scss";
+import "../../../styles/plugins/_phoneInput..scss";
 
 const RegistrationForm = () => {
   const [isOpenEyePass, setIsOpenEyePass] = useState(false);

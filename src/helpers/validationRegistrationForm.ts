@@ -31,4 +31,3 @@ const validationRegitrationForm: Yup.Schema<InitialValue> = Yup.object({
 });
 
 export default validationRegitrationForm;
-

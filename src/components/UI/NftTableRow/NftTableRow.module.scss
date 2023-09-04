@@ -68,7 +68,6 @@
 
 .row__cellAvatar {
   grid-area: avatar;
-  // width: 64px;
 }
 
 .row__cellName,
@@ -88,10 +87,6 @@
   @media screen and (min-width: $mobile) and (max-width: $mobileEnd) {
     margin-bottom: 16px;
   }
-
-  // @media screen and (min-width: $desktop) {
-  //   width: 37.4%;
-  // }
 }
 
 .row__cellLevel,
@@ -104,36 +99,13 @@
 
 .row__cellLevel {
   grid-area: level;
-  // @media screen and (min-width: $tablet) {
-  //   width: 16.7%;
-  //   padding: 11px 16px;
-  // }
-
-  // @media screen and (min-width: $desktop) {
-  //   width: 15%;
-  //   padding: 11px 24px;
-  // }
 }
 
 .row__cellGames {
   grid-area: games;
-  // @media screen and (min-width: $tablet) {
-  //   width: 13%;
-  // }
-
-  // @media screen and (min-width: $desktop) {
-  //   width: 14.5%;
-  // }
 }
 .row__cellWin {
   grid-area: win;
-  // @media screen and (min-width: $tablet) {
-  //   width: 13.4%;
-  // }
-
-  // @media screen and (min-width: $desktop) {
-  //   width: 14.2%;
-  // }
 }
 
 .row__cellPrice {
@@ -143,12 +115,4 @@
     align-items: center;
     justify-content: end;
   }
-
-  // @media screen and (min-width: $tablet) {
-  //   width: 13.2%;
-  // }
-
-  // @media screen and (min-width: $desktop) {
-  //   width: 13.6%;
-  // }
 }

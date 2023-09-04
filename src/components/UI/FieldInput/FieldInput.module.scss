@@ -27,9 +27,6 @@
 
   color: $whiteColor;
 
-  // font-family: $bodyFont;
-  // letter-spacing: -0.28px;
-
   transition: border-color $animation;
 
   &::placeholder {
@@ -58,4 +55,3 @@
 .success {
   border-color: $successGreenColor;
 }
-

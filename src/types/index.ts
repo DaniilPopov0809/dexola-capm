@@ -20,16 +20,9 @@ export interface FeatureCardProps {
   id: string;
   title: TitleType;
   description: string;
-  // imageData: {
-  //   mobile: ImageData;
-  //   tablet: ImageData;
-  //   desktop: ImageData;
-  // };
-  // imageData: ImageData;
-    imageData: {
+  imageData: {
     mobile: ImageData;
     tab_desk: ImageData;
-    
   };
 }
 
@@ -41,6 +34,5 @@ export interface TopNftsProps {
   games: string;
   win: string;
   price: string;
-  index?  : number;
+  index?: number;
 }
-

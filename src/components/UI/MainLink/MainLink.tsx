@@ -10,11 +10,11 @@ interface MainLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 }
 
 const MainLink = ({
-  link,
-  title,
-  globalClassName,
-  localClassName,
-  additionalClassName = "",
+  link,                        //link to recourse
+  title,                      //text in link
+  globalClassName,            //the global class is styles/common
+  localClassName,             //class is MainLink.module.scss
+  additionalClassName = "",   //class is MainLink.module.scss
   ...props
 }: MainLinkProps) => {
   return (

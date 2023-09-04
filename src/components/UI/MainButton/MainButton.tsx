@@ -10,11 +10,11 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const MainButton = ({
-  title,
-  onClick,
-  globalClassName,
-  localClassName,
-  additionalClassName = "",
+  title,                      //text in button
+  onClick, 
+  globalClassName,            //the global class is styles/common
+  localClassName,             //class is MainButton.module.scss
+  additionalClassName = "",   //class is MainButton.module.scss
   ...props
 }: ButtonProps) => {
   return (
