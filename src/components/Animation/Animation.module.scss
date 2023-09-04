@@ -2,7 +2,7 @@
 @import "../../styles/plugins/keyframes";
 
 .animation {
-  @media screen and (min-width: $mobile) and (max-width: $tabletEnd) {
+  @media screen and (max-width: $tabletEnd) {
     display: none;
   }
 

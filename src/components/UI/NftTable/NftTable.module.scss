@@ -8,7 +8,7 @@
 }
 
 .table__head {
-  @media screen and (min-width: $mobile) and (max-width: $mobileEnd) {
+  @media screen and (max-width: $mobileEnd) {
     position: absolute;
     width: 1px;
     height: 1px;
