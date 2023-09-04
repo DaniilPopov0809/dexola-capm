@@ -17,7 +17,7 @@ const Hero = () => {
             ${tab_desk.x2} 2x,
             ${tab_desk.x3} 3x
           `}
-                    media="(min-width: 744px)"
+                    media="(min-width: 480px)"
                   />
 
                   <source
