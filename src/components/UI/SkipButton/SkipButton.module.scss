@@ -16,7 +16,11 @@
   transition: transform $animation;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+  }
+
+  &:active {
+    scale: 1.04;
   }
 }
 

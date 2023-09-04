@@ -12,7 +12,6 @@ const NftTableRow = ({
 }: TopNftsProps) => {
   return (
     <tr className={styles.row}>
-      <th scope="row"></th>
       <td headers="avatar" className={`${styles.row__cellAvatar}`}>
         <img
           className={styles.row__img}

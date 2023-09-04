@@ -21,6 +21,10 @@
     background-color: $buttonHoverColor;
   }
 
+  &:active {
+    scale: 1.05;
+  }
+
   @media screen and (min-width: $tablet) {
     font-size: $bodyTabletFontsize;
     line-height: 1.5;
