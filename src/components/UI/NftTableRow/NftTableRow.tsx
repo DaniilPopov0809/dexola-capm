@@ -12,7 +12,7 @@ const NftTableRow = ({
 }: TopNftsProps) => {
   return (
     <tr className={styles.row}>
-      <td headers="avatar" className={`${styles.row__cellAvatar}`}>
+      <td className={`${styles.row__cellAvatar}`}>
         <img
           className={styles.row__img}
           srcSet={`${avatar.x1} 1x,
@@ -25,14 +25,12 @@ const NftTableRow = ({
         />
       </td>
       <td
-        headers="name"
         className={`${styles.row__cell} ${styles.row__cellName}`}
       >
         <span className={styles.row__number}>{`${index + 1}.`}</span>
         <span>{name}</span>
       </td>
       <td
-        headers="level"
         className={`${styles.row__cell} ${styles.row__cellLevel}`}
       >
         <span className={styles.row__cellLabel} aria-hidden="true">
@@ -41,7 +39,6 @@ const NftTableRow = ({
         <span>{level}</span>
       </td>
       <td
-        headers="games"
         className={`${styles.row__cell} ${styles.row__cellGames}`}
       >
         <span className={styles.row__cellLabel} aria-hidden="true">
@@ -50,7 +47,6 @@ const NftTableRow = ({
         <span>{games}</span>
       </td>
       <td
-        headers="win"
         className={`${styles.row__cell} ${styles.row__cellWin}`}
       >
         <span className={styles.row__cellLabel} aria-hidden="true">
@@ -59,7 +55,6 @@ const NftTableRow = ({
         <span>{win}</span>
       </td>
       <td
-        headers="price"
         className={`${styles.row__cell} ${styles.row__cellPrice}`}
       >
         {price}
