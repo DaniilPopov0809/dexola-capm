@@ -8,20 +8,20 @@ const NftTable = () => {
     <table className={styles.table}>
       <thead className={`title__h3 ${styles.table__head}`}>
         <tr className={styles.table__headRow}>
-          <th scope="col" className={`${styles.table__headCell}`}></th>
-          <th scope="col" className={styles.table__headCell}>
+          <th id="avatar" scope="col" className={`${styles.table__headCell}`}></th>
+          <th id="name" scope="col" className={styles.table__headCell}>
             NFT Name
           </th>
-          <th scope="col" className={styles.table__headCell}>
+          <th id="level" scope="col" className={styles.table__headCell}>
             Rarity Level
           </th>
-          <th scope="col" className={styles.table__headCell}>
+          <th id="games" scope="col" className={styles.table__headCell}>
             Total games
           </th>
-          <th scope="col" className={styles.table__headCell}>
+          <th id="win" scope="col" className={styles.table__headCell}>
             Games Won
           </th>
-          <th scope="col" className={styles.table__headCell}>
+          <th id="price" scope="col" className={styles.table__headCell}>
             Price (ETH)
           </th>
         </tr>
