@@ -8,7 +8,7 @@ const NftTable = () => {
     <table className={styles.table}>
       <thead className={`title__h3 ${styles.table__head}`}>
         <tr className={styles.table__headRow}>
-          <th scope="col" className={`${styles.table__headCell}`}></th>
+          <th id="avatar" scope="col" className={`${styles.table__headCell}`}></th>
           <th id="name" scope="col" className={styles.table__headCell}>
             NFT Name
           </th>

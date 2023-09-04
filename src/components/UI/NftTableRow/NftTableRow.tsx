@@ -12,7 +12,7 @@ const NftTableRow = ({
 }: TopNftsProps) => {
   return (
     <tr className={styles.row}>
-      <td className={`${styles.row__cellAvatar}`}>
+      <td headers="avatar" className={`${styles.row__cellAvatar}`}>
         <img
           className={styles.row__img}
           srcSet={`${avatar.x1} 1x,

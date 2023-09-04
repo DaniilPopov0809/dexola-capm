@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap');
+@font-face {
+    font-family: "Kanit";
+    src: url("../fonts/Kanit-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Mono"; 
+    src: url("../fonts/RobotoMono-Regular.ttf");
+}
 
 @import "./common/variables";
 @import "./common/mixins";

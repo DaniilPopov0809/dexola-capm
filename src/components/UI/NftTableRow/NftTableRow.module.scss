@@ -72,7 +72,7 @@
 
 .row__cellName,
 .row__cellPrice {
-  @media screen and (min-width: $mobile) and (max-width: $mobileEnd) {
+  @media screen and (max-width: $mobileEnd) {
     font-family: $titleSubtitleFont;
     font-size: 1rem;
     font-weight: $mediumWeight;
@@ -84,7 +84,7 @@
   grid-area: name;
   justify-content: start;
 
-  @media screen and (min-width: $mobile) and (max-width: $mobileEnd) {
+  @media screen and (max-width: $mobileEnd) {
     margin-bottom: 16px;
   }
 }
@@ -92,7 +92,7 @@
 .row__cellLevel,
 .row__cellGames,
 .row__cellWin {
-  @media screen and (min-width: $mobile) and (max-width: $mobileEnd) {
+  @media screen and (max-width: $mobileEnd) {
     color: $lightGreyColor;
   }
 }
@@ -110,7 +110,7 @@
 
 .row__cellPrice {
   grid-area: price;
-  @media screen and (min-width: $mobile) and (max-width: $mobileEnd) {
+  @media screen and (max-width: $mobileEnd) {
     display: flex;
     align-items: center;
     justify-content: end;
