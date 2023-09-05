@@ -5,7 +5,7 @@
   font-family: $bodyFont;
   font-weight: $mediumWeight;
   font-size: $bodyMobileFontsize;
-  line-height: 1.71;
+  line-height: 1.5;
   letter-spacing: 0.0175rem;
 
   text-transform: uppercase;
@@ -27,7 +27,6 @@
 
   @media screen and (min-width: $tablet) {
     font-size: $bodyTabletFontsize;
-    line-height: 1.5;
     letter-spacing: 0.02rem;
   }
 }

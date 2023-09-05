@@ -1,4 +1,5 @@
 html {
+  scroll-behavior: smooth;
   @include custom-scrollbar;
 }
 
@@ -11,7 +12,9 @@ h2,
 h3,
 h4,
 p,
-ul {
+ul,
+td,
+tr {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -27,8 +30,3 @@ a {
   text-decoration: none;
 }
 
-td,
-tr {
-  padding: 0;
-  margin: 0;
-}

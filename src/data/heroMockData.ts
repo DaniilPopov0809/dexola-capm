@@ -1,11 +1,4 @@
-import { ImageData } from "../types";
-
-type HeroData = {
-  mobile: ImageData;
-  tab_desk: ImageData;
-};
-
-type HeroMockData = [HeroData[], HeroData[]];
+import { HeroMockData } from "../types";
 
 import hero1mob_1x from "../images/hero/hero_1mob@1x.webp";
 import hero1mob_2x from "../images/hero/hero_1mob@2x.webp";

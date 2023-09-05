@@ -1,80 +1,21 @@
 import styles from "./Hero.module.scss";
 import heroMockData from "../../data/heroMockData";
 import Title from "../UI/Title/Title";
+import HeroListItem from "../UI/HeroListItem/HeroListItem";
 
 const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={`container ${styles.hero__wrap}`}>
         <ul className={styles.hero__list}>
-          <li className={styles.hero__item}>
-            {heroMockData[0].map(({ mobile, tab_desk }) => (
-              <div className={styles.hero_imageContainerLeft}>
-                <picture key={mobile.x1}>
-                  <source
-                    srcSet={`
-            ${tab_desk.x1} 1x,
-            ${tab_desk.x2} 2x,
-            ${tab_desk.x3} 3x
-          `}
-                    media="(min-width: 480px)"
-                  />
-
-                  <source
-                    srcSet={`
-            ${mobile.x1} 1x,
-            ${mobile.x2} 2x,
-            ${mobile.x3} 3x
-          `}
-                    media="(min-width: 375px)"
-                  />
-
-                  <img
-                    src={`${mobile.x1}`}
-                    alt="Hero image"
-                    aria-hidden="true"
-                    className={styles.hero_image}
-                    width={163}
-                    height={311}
-                  />
-                </picture>
-              </div>
-            ))}
-          </li>
-          <li className={styles.hero__item}>
-            {heroMockData[1].map(({ mobile, tab_desk }) => (
-              <div className={styles.hero_imageContainerRight}>
-                <picture key={mobile.x1}>
-                  <source
-                    srcSet={`
-              ${tab_desk.x1} 1x,
-              ${tab_desk.x2} 2x,
-              ${tab_desk.x3} 3x
-            `}
-                    media="(min-width: 480px)"
-                  />
-
-                  <source
-                    srcSet={`
-              ${mobile.x1} 1x,
-              ${mobile.x2} 2x,
-              ${mobile.x3} 3x
-            `}
-                    media="(min-width: 375px)"
-                  />
-
-                  <img
-                    src={`${mobile.x1}`}
-                    alt="Hero image"
-                    aria-hidden="true"
-                    className={styles.hero_image}
-                    width={163}
-                    height={311}
-                  />
-                </picture>
-              </div>
-            ))}
-          </li>
+          <HeroListItem
+            images={heroMockData[0]}
+            className={"hero_imageContainerLeft"}
+          />
+          <HeroListItem
+            images={heroMockData[1]}
+            className={"hero_imageContainerRight"}
+          />
         </ul>
         <div className={styles.hero__titleContainer}>
           <Title
