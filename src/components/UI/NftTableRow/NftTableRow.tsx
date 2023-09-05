@@ -8,7 +8,7 @@ const NftTableRow = ({
   games,
   win,
   price,
-  // index = 0,
+  index = 0,
 }: TopNftsProps) => {
   return (
     <tr className={styles.row}>
@@ -29,32 +29,32 @@ const NftTableRow = ({
         headers="name"
         className={`${styles.row__cell} ${styles.row__cellName}`}
       >
-        {/* <span className={styles.row__number}>{`${index + 1}.`}</span> */}
+        <span className={styles.row__number}>{`${index + 1}.`}</span>
         <span>{name}</span>
       </td>
       <td
         headers="level"
         className={`${styles.row__cell} ${styles.row__cellLevel}`}
       >
-        {/* <span className={styles.row__cellLabel} aria-hidden="true">
+        <span className={styles.row__cellLabel}>
           Rarity:
-        </span>{" "} */}
+        </span>{" "}
         <span>{level}</span>
       </td>
       <td
         headers="games"
         className={`${styles.row__cell} ${styles.row__cellGames}`}
       >
-        {/* <span className={styles.row__cellLabel} aria-hidden="true">
+        <span className={styles.row__cellLabel}>
           Total games:
-        </span> */}
+        </span>
         <span>{games}</span>
       </td>
       <td
         headers="win"
         className={`${styles.row__cell} ${styles.row__cellWin}`}
       >
-        <span className={styles.row__cellLabel} aria-hidden="true">
+        <span className={styles.row__cellLabel} >
           Games Won:
         </span>
         <span>{win}</span>

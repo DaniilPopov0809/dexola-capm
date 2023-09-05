@@ -12,7 +12,7 @@ const NftTable = () => {
             id="avatar"
             scope="col"
             className={`${styles.table__headCell}`}
-          ></th>
+          >avatar</th>
           <th id="name" scope="col" className={styles.table__headCell}>
             NFT Name
           </th>

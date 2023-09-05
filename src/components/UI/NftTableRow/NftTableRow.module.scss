@@ -1,20 +1,19 @@
 @import "../../../styles/common/variables";
 
 .row {
-  
+  display: grid;
 
   padding: 16px 24px;
 
-  // grid-template-areas:
-  //   "name name price"
-  //   "avatar level level"
-  //   "avatar games games"
-  //   "avatar win win";
-  // grid-template-columns: 80px 1fr 1fr;
-  // grid-template-rows: auto;
+  grid-template-areas:
+    "name name price"
+    "avatar level level"
+    "avatar games games"
+    "avatar win win";
+  grid-template-columns: 80px 1fr 1fr;
+  grid-template-rows: auto;
 
   @media screen and (min-width: $tablet) {
-    display: grid;
     padding: 8px 0;
 
     grid-template-areas: "avatar name level games win price";
@@ -43,8 +42,8 @@
 }
 
 .row__cell {
-  // display: flex;
-  // justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   @media screen and (min-width: $tablet) {
     padding: 11px 16px;
     align-items: center;
