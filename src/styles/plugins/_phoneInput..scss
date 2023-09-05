@@ -67,7 +67,7 @@
     color: $lightGreyColor;
   }
 
-  font-family: "Roboto Mono", sans-serif;
+  font-family: $bodyFont;
   letter-spacing: -0.0175rem;
 
   @media screen and (min-width: $tablet) {

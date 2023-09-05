@@ -36,3 +36,10 @@ export interface TopNftsProps {
   price: string;
   index?: number;
 }
+
+export type HeroData = {
+  mobile: ImageData;
+  tab_desk: ImageData;
+};
+
+export type HeroMockData = [HeroData[], HeroData[]];

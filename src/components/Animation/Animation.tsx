@@ -5,7 +5,7 @@ import styles from "./Animation.module.scss";
 const Animation = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.5,
+    threshold: 0.7,
   });
 
   return (

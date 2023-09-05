@@ -9,13 +9,15 @@ const Header = () => {
         <a className={styles.header__linkLogo} href="/">
           <img src={logo} alt="logo" width={35} height={20} />
         </a>
-        <MainLink
-          link="#joinUs"
-          title="Join Now"
-          globalClassName="linkButton"
-          localClassName="header__link"
-          additionalClassName="header__linkTextWrap"
-        />
+        <nav className={styles.header__nav}>
+          <MainLink
+            link="#joinUs"
+            title="Join Now"
+            globalClassName="linkButton"
+            localClassName="header__link"
+            additionalClassName="header__linkTextWrap"
+          />
+        </nav>
       </div>
     </header>
   );
