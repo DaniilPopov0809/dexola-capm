@@ -2,7 +2,7 @@
 
 ## Зовнішній вигляд
 
-![Зовнішній вигляд](./assets/desktop_overview.gif)
+![Зовнішній вигляд](./assets/overview.gif)
 
 ## Опис проекту
 

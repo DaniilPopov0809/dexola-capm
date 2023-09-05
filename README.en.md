@@ -2,7 +2,7 @@
 
 ## App view
 
-![Overview](./assets/desktop_overview.gif)
+![Overview](./assets/overview.gif)
 
 ## Description of the project
 
