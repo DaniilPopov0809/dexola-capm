@@ -5,13 +5,13 @@
 
   padding: 16px 24px;
 
-  // grid-template-areas:
-  //   "name name price"
-  //   "avatar level level"
-  //   "avatar games games"
-  //   "avatar win win";
-  // grid-template-columns: 80px 1fr 1fr;
-  // grid-template-rows: auto;
+  grid-template-areas:
+    "name name price"
+    "avatar level level"
+    "avatar games games"
+    "avatar win win";
+  grid-template-columns: 80px 1fr 1fr;
+  grid-template-rows: auto;
 
   @media screen and (min-width: $tablet) {
     padding: 8px 0;

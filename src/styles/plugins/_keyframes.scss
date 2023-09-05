@@ -67,10 +67,13 @@
 @keyframes commonMoveCircle {
   0% {
     transform: scale(0);
+   
     opacity: 1;
   }
   100% {
-    transform: scale(40);
+    transform: scale(2);
+    width: 800px;
+    height: 400px;
     opacity: 1;
   }
 }
@@ -81,7 +84,9 @@
     opacity: 1;
   }
   100% {
-    transform: scale(40);
+    transform: scale(2);
+    width: 600px;
+    height: 800px;
     opacity: 1;
   }
 }
