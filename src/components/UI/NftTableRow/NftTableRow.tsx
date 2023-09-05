@@ -36,27 +36,21 @@ const NftTableRow = ({
         headers="level"
         className={`${styles.row__cell} ${styles.row__cellLevel}`}
       >
-        <span className={styles.row__cellLabel}>
-          Rarity:
-        </span>{" "}
+        <span className={styles.row__cellLabel}>Rarity:</span>{" "}
         <span>{level}</span>
       </td>
       <td
         headers="games"
         className={`${styles.row__cell} ${styles.row__cellGames}`}
       >
-        <span className={styles.row__cellLabel}>
-          Total games:
-        </span>
+        <span className={styles.row__cellLabel}>Total games:</span>
         <span>{games}</span>
       </td>
       <td
         headers="win"
         className={`${styles.row__cell} ${styles.row__cellWin}`}
       >
-        <span className={styles.row__cellLabel} >
-          Games Won:
-        </span>
+        <span className={styles.row__cellLabel}>Games Won:</span>
         <span>{win}</span>
       </td>
       <td

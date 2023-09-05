@@ -1,4 +1,5 @@
 @import "../../../styles/common/variables";
+@import "../../../styles/common/mixins";
 
 .table {
   width: 100%;
@@ -9,15 +10,7 @@
 
 .table__head {
   @media screen and (max-width: $mobileEnd) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+    @include visuallyHidden;
   }
 
   @media screen and (min-width: $tablet) and (max-width: $tabletEnd) {
@@ -49,6 +42,6 @@
   }
 }
 
-.table__headAvatar {
-  width: 64px;
+.table__headCellAvatar {
+  color: transparent;
 }
