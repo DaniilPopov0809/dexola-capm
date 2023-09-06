@@ -141,7 +141,7 @@
   color: $lightGreyColor;
   font-family: $bodyFont;
 
-  @include custom-scrollbar;
+  @include customScrollbar($accentBlueColor, $backgroundColor);
 }
 
 .PhoneInputCountrySelect[disabled],

@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  @include custom-scrollbar;
+  @include customScrollbar($accentBlueColor, $backgroundColor);
 }
 
 body {
