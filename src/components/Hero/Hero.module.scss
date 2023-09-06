@@ -83,6 +83,7 @@
 }
 
 .hero__description {
+  color: $whiteColor;
   @media screen and (min-width: $desktop) {
     padding: 159px 70px 56px 24px;
   }
