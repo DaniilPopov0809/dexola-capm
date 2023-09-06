@@ -27,3 +27,13 @@
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+@mixin animateHeroDelay($selector, $count, $delayStart, $delayIncrement) {
+  #{$selector} {
+    @for $i from 1 through $count {
+      &:nth-child(#{$i}) {
+        animation-delay: #{$delayStart + ($i - 1) * $delayIncrement}s;
+      }
+    }
+  }
+}

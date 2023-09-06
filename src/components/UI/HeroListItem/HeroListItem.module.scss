@@ -1,5 +1,6 @@
 @import "../../../styles/common/variables";
 @import "../../../styles/plugins/keyframes";
+@import "../../../styles/common/mixins";
 
 .hero__item {
   position: relative;
@@ -37,47 +38,11 @@
 }
 
 .hero_imageContainerLeft {
-  &:nth-child(1) {
-    animation-delay: 0s;
-  }
-
-  &:nth-child(2) {
-    animation-delay: 4s;
-  }
-
-  &:nth-child(3) {
-    animation-delay: 8s;
-  }
-
-  &:nth-child(4) {
-    animation-delay: 12s;
-  }
-
-  &:nth-child(5) {
-    animation-delay: 16s;
-  }
+  @include animateHeroDelay("&", 5, 0, 4);
 }
 
 .hero_imageContainerRight {
-  &:nth-child(1) {
-    animation-delay: 0s;
-  }
-
-  &:nth-child(2) {
-    animation-delay: 5s;
-  }
-
-  &:nth-child(3) {
-    animation-delay: 9s;
-  }
-
-  &:nth-child(4) {
-    animation-delay: 13s;
-  }
-
-  &:nth-child(5) {
-    animation-delay: 17s;
-  }
+  @include animateHeroDelay("&", 5, 0, 5);
 }
 
 .hero__item::before {
